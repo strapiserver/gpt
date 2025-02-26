@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  converter:
+    container_name: converter
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: darkshrine/converter:latest

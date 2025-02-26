@@ -1,0 +1,29 @@
+{
+  "name": "converter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon",
+    "start": "yarn build && node build/index.js",
+    "build": "rimraf ./build && tsc"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "cheerio": "^1.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "fastify": "^4.26.2",
+    "graphql": "^16.7.1",
+    "graphql-request": "^6.1.0",
+    "node-json-db": "^1.4.1",
+    "openai": "^4.78.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.6",
+    "nodemon": "^2.0.20",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.4.5"
+  }
+}
