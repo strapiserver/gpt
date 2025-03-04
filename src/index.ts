@@ -2,20 +2,15 @@ import Fastify from "fastify";
 import dotenv from "dotenv";
 import auth from "./services/auth";
 import callStrapi from "./services/callStrapi";
-import {
-  PmGroupsQuery,
-  PromptsQuery,
-  LinksQuery,
-  UpdateRefLinks,
-  DeleteExchanger,
-} from "./services/queries";
+import { PmGroupsQuery, PromptsQuery, LinksQuery } from "./services/queries";
 import { IArticleData, IPrompt } from "./types";
 import OpenAI from "openai";
 import db from "./db";
 import { ISection } from "./types/selector";
 import { createArticle, getPmNames, makeRefLink, sleep } from "./helper";
-import { create } from "domain";
-import { empty } from "cheerio/dist/commonjs/api/manipulation";
+
+import { fetchTextBlocks } from "./descriptions";
+import { callGPT, trimTextValues } from "./descriptions/helper";
 
 dotenv.config();
 
@@ -43,6 +38,32 @@ server.get("/", async (req: any, reply) => {
   reply.send(JSON.stringify(rest));
 });
 
+server.get("/filldescriptions", async (req: any, reply) => {
+  reply.header("Access-Control-Allow-Origin", "*");
+  const promptData = (await callStrapi(PromptsQuery)) as {
+    prompts: IPrompt[];
+  };
+  const promptDescription = promptData?.prompts?.find(
+    (p) => p.code.toLowerCase() == "exchanger_description"
+  )?.description;
+
+  const data = await callStrapi(LinksQuery);
+  const exchangers = data.exchangers.filter((e: any) => e.ref_link);
+
+  for (let e of exchangers) {
+    const textBlocks = await fetchTextBlocks(e.ref_link);
+    if (textBlocks) {
+      console.log(`Text block received ${textBlocks.length}`);
+      const prompt =
+        promptDescription + " " + JSON.stringify(trimTextValues(textBlocks));
+      const res = await callGPT({ prompt, exchangerId: e.id });
+      reply.send(JSON.stringify(res));
+    }
+    await sleep(5000);
+  }
+  reply.send("error");
+});
+
 server.get("/fillrefs", async (req: any, reply) => {
   reply.header("Access-Control-Allow-Origin", "*");
   const data = await callStrapi(LinksQuery);
@@ -51,11 +72,11 @@ server.get("/fillrefs", async (req: any, reply) => {
     ...e,
     ref_link: makeRefLink(e.rates_link),
   }));
-  for (let e of withRefLinks) {
-    await callStrapi(DeleteExchanger, { id: e.id });
-    console.log(`deleted ${e.id}`);
-    await sleep(800);
-  }
+  // for (let e of withRefLinks) {
+  //   await callStrapi(DeleteExchanger, { id: e.id });
+  //   console.log(`deleted ${e.id}`);
+  //   await sleep(800);
+  // }
   reply.send(JSON.stringify(withRefLinks));
 });
 

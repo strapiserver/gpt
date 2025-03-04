@@ -17,3 +17,12 @@ export interface IArticleData {
     text: string;
   }[];
 }
+
+export interface IExchangerData {
+  en_description?: string;
+  ru_description?: string;
+  email?: string;
+  telegram?: string;
+  working_time?: string;
+  partners?: string[];
+}
