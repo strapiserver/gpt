@@ -100,7 +100,10 @@ export const PmGroupsQuery = gql`
 
 export const LinksQuery = gql`
   {
-    exchangers(pagination: { limit: 1000 }) {
+    exchangers(
+      pagination: { limit: 1000 }
+      filters: { ru_description: { notNull: false } }
+    ) {
       data {
         id
         attributes {
@@ -125,6 +128,34 @@ export const UpdateRefLinks = gql`
 export const DeleteExchanger = gql`
   mutation DeleteExchanger($id: ID!) {
     deleteExchanger(id: $id) {
+      data {
+        id
+      }
+    }
+  }
+`;
+
+export const UpdateDescriptions = gql`
+  mutation UpdateExchanger(
+    $id: ID!
+    $ru_description: String
+    $en_description: String
+    $telegram: String
+    $email: String
+    $working_time: String
+    $admin_rating: Float
+  ) {
+    updateExchanger(
+      id: $id
+      data: {
+        en_description: $en_description
+        ru_description: $ru_description
+        telegram: $telegram
+        email: $email
+        working_time: $working_time
+        admin_rating: $admin_rating
+      }
+    ) {
       data {
         id
       }

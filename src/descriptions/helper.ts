@@ -1,7 +1,7 @@
 import OpenAI from "openai";
 import db from "../db";
 import { sleep, createArticle } from "../helper";
-import { IArticleData, IExchangerData } from "../types";
+import { IArticleData, IDescriptionData } from "../types";
 import dotenv from "dotenv";
 
 dotenv.config();
@@ -27,7 +27,7 @@ export const callGPT = async ({
   exchangerId: string;
 }) => {
   let rawResult: string | null = null;
-  let exchangerData: IExchangerData | null = null;
+  let exchangerData: IDescriptionData | null = null;
 
   let attempts = 0;
   const maxRetries = 3;
@@ -42,13 +42,11 @@ export const callGPT = async ({
       rawResult = completion?.choices?.[0]?.message?.content;
 
       if (rawResult) {
-        //   exchangerData = JSON.parse(rawResult) as IExchangerData;
-        console.log(`📗 \u001b[1;32m ${rawResult}`);
+        const json = JSON.parse(rawResult) as IDescriptionData;
+        return json;
         break; // ✅ Success, exit retry loop
       } else {
-        console.log(
-          `📕 \u001b[1;31m ${exchangerId} returned an empty response.`
-        );
+        console.log(`📕 \u001b[1;31m ${exchangerId} error`);
       }
     } catch (error) {
       console.error(
@@ -87,3 +85,6 @@ export const trimTextValues = (
     text: item.text.slice(0, 4000),
   }));
 };
+
+export const generateRating = () =>
+  +(Math.random() * (5 - 3.4) + 3.4).toFixed(2);

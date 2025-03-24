@@ -2,15 +2,25 @@ import Fastify from "fastify";
 import dotenv from "dotenv";
 import auth from "./services/auth";
 import callStrapi from "./services/callStrapi";
-import { PmGroupsQuery, PromptsQuery, LinksQuery } from "./services/queries";
-import { IArticleData, IPrompt } from "./types";
+import {
+  PmGroupsQuery,
+  PromptsQuery,
+  LinksQuery,
+  UpdateDescriptions,
+} from "./services/queries";
+import {
+  IArticleData,
+  IDescriptionData,
+  IExchangerData,
+  IPrompt,
+} from "./types";
 import OpenAI from "openai";
 import db from "./db";
 import { ISection } from "./types/selector";
 import { createArticle, getPmNames, makeRefLink, sleep } from "./helper";
 
 import { fetchTextBlocks } from "./descriptions";
-import { callGPT, trimTextValues } from "./descriptions/helper";
+import { callGPT, generateRating, trimTextValues } from "./descriptions/helper";
 
 dotenv.config();
 
@@ -40,28 +50,55 @@ server.get("/", async (req: any, reply) => {
 
 server.get("/filldescriptions", async (req: any, reply) => {
   reply.header("Access-Control-Allow-Origin", "*");
-  const promptData = (await callStrapi(PromptsQuery)) as {
-    prompts: IPrompt[];
-  };
-  const promptDescription = promptData?.prompts?.find(
-    (p) => p.code.toLowerCase() == "exchanger_description"
-  )?.description;
+  try {
+    const promptData = (await callStrapi(PromptsQuery)) as {
+      prompts: IPrompt[];
+    };
+    const promptDescription = promptData?.prompts?.find(
+      (p) => p.code.toLowerCase() == "exchanger_description"
+    )?.description;
 
-  const data = await callStrapi(LinksQuery);
-  const exchangers = data.exchangers.filter((e: any) => e.ref_link);
+    const data = await callStrapi(LinksQuery);
+    const exchangers = data.exchangers.filter(
+      (e: any) => e.ref_link
+    ) as IExchangerData[];
+    console.log(`Exchangers without description found: ${exchangers.length}`);
 
-  for (let e of exchangers) {
-    const textBlocks = await fetchTextBlocks(e.ref_link);
-    if (textBlocks) {
-      console.log(`Text block received ${textBlocks.length}`);
-      const prompt =
-        promptDescription + " " + JSON.stringify(trimTextValues(textBlocks));
-      const res = await callGPT({ prompt, exchangerId: e.id });
-      reply.send(JSON.stringify(res));
+    for (let e of exchangers) {
+      const textBlocks = await fetchTextBlocks(e.ref_link);
+      if (textBlocks) {
+        const prompt =
+          promptDescription + " " + JSON.stringify(trimTextValues(textBlocks));
+        const res = (await callGPT({
+          prompt,
+          exchangerId: e.id,
+        })) as any;
+
+        console.log(` ✅ \u001b[1;32m ---------------------------`);
+        console.log(` ✅ \u001b[1;32m Blocks: ${textBlocks.length}`);
+        console.log(` ✅ \u001b[1;32m ___________________________`);
+
+        if (res) {
+          const data = {
+            id: e.id,
+            ru_description: res.ru_description || null,
+            en_description: res.en_description || null,
+            telegram: res.telegram || null,
+            email: res.email || null,
+            working_time: res.working_time || null,
+            admin_rating: generateRating(),
+          };
+
+          await callStrapi(UpdateDescriptions, data);
+          console.log(`📙 \u001b[1;33m ${e.id} filled!`);
+        }
+        // reply.send(JSON.stringify(res));
+      }
+      await sleep(5000);
     }
-    await sleep(5000);
+  } catch (err) {
+    reply.send(`some error ffs`);
   }
-  reply.send("error");
 });
 
 server.get("/fillrefs", async (req: any, reply) => {

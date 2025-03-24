@@ -2,6 +2,7 @@ import axios from "axios";
 import * as cheerio from "cheerio";
 import { writeMyFile } from "../fileHandler";
 import { run } from "node:test";
+import { IDescriptionData } from "../types";
 
 function isSimilarText(
   existingTexts: string[],
@@ -40,9 +41,6 @@ export async function fetchTextBlocks(url: string) {
         textBlocks.push({ tag, text, ...(href ? { href } : {}) });
       }
     });
-
-    console.log(`Extracted text blocks from ${url}:`, textBlocks.length);
-
     return textBlocks;
   } catch (error) {
     console.error(`Failed to fetch ${url}:`, error);

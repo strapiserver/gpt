@@ -18,11 +18,17 @@ export interface IArticleData {
   }[];
 }
 
-export interface IExchangerData {
+export interface IDescriptionData {
   en_description?: string;
   ru_description?: string;
   email?: string;
   telegram?: string;
   working_time?: string;
   partners?: string[];
+}
+
+export interface IExchangerData {
+  id: string;
+  rates_link: string;
+  ref_link: string;
 }
