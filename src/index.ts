@@ -1,4 +1,4 @@
-import Fastify from "fastify";
+import Fastify, { FastifyReply, FastifyRequest } from "fastify";
 import dotenv from "dotenv";
 import auth from "./services/auth";
 import callStrapi from "./services/callStrapi";
@@ -20,7 +20,13 @@ import { ISection } from "./types/selector";
 import { createArticle, getPmNames, makeRefLink, sleep } from "./helper";
 
 import { fetchTextBlocks } from "./descriptions";
-import { callGPT, generateRating, trimTextValues } from "./descriptions/helper";
+import {
+  callGPT,
+  fetchWithPuppeteer,
+  generateRating,
+  trimTextValues,
+} from "./descriptions/helper";
+import puppeteer from "puppeteer";
 
 dotenv.config();
 
@@ -48,58 +54,85 @@ server.get("/", async (req: any, reply) => {
   reply.send(JSON.stringify(rest));
 });
 
-server.get("/filldescriptions", async (req: any, reply) => {
-  reply.header("Access-Control-Allow-Origin", "*");
-  try {
-    const promptData = (await callStrapi(PromptsQuery)) as {
-      prompts: IPrompt[];
-    };
-    const promptDescription = promptData?.prompts?.find(
-      (p) => p.code.toLowerCase() == "exchanger_description"
-    )?.description;
+server.get(
+  "/filldescriptions",
+  async (req: FastifyRequest, reply: FastifyReply) => {
+    reply.header("Access-Control-Allow-Origin", "*");
 
-    const data = await callStrapi(LinksQuery);
-    const exchangers = data.exchangers.filter(
-      (e: any) => e.ref_link
-    ) as IExchangerData[];
-    console.log(`Exchangers without description found: ${exchangers.length}`);
+    // Launch Puppeteer with Stealth mode
+    const browser = await puppeteer.launch({
+      headless: true, // Try 'false' if Cloudflare blocks requests
+      args: ["--no-sandbox", "--disable-setuid-sandbox"],
+    });
 
-    for (let e of exchangers) {
-      const textBlocks = await fetchTextBlocks(e.ref_link);
-      if (textBlocks) {
-        const prompt =
-          promptDescription + " " + JSON.stringify(trimTextValues(textBlocks));
-        const res = (await callGPT({
-          prompt,
-          exchangerId: e.id,
-        })) as any;
+    try {
+      const promptData = (await callStrapi(PromptsQuery)) as {
+        prompts: IPrompt[];
+      };
+      const promptDescription = promptData?.prompts?.find(
+        (p) => p.code.toLowerCase() === "exchanger_description"
+      )?.description;
 
-        console.log(` ✅ \u001b[1;32m ---------------------------`);
-        console.log(` ✅ \u001b[1;32m Blocks: ${textBlocks.length}`);
-        console.log(` ✅ \u001b[1;32m ___________________________`);
+      const data = await callStrapi(LinksQuery);
+      const exchangers = (data.exchangers as IExchangerData[]).filter(
+        (e) => e.ref_link
+      );
 
-        if (res) {
-          const data = {
-            id: e.id,
-            ru_description: res.ru_description || null,
-            en_description: res.en_description || null,
-            telegram: res.telegram || null,
-            email: res.email || null,
-            working_time: res.working_time || null,
-            admin_rating: generateRating(),
-          };
+      console.log(`Exchangers without description found: ${exchangers.length}`);
 
-          await callStrapi(UpdateDescriptions, data);
-          console.log(`📙 \u001b[1;33m ${e.id} filled!`);
+      for (const e of exchangers) {
+        let textBlocks: any = null;
+        let retryCount = 0;
+
+        // Retry fetching if Cloudflare blocks the request
+        while (!textBlocks && retryCount < 3) {
+          textBlocks = await fetchWithPuppeteer(browser, e.ref_link);
+          retryCount++;
+
+          if (!textBlocks) {
+            console.log(`🔄 Retrying (${retryCount}/3) for ${e.ref_link}...`);
+            await sleep(7000); // Wait before retrying
+          }
         }
-        // reply.send(JSON.stringify(res));
+
+        if (textBlocks) {
+          const prompt =
+            promptDescription +
+            " " +
+            JSON.stringify(trimTextValues(textBlocks));
+
+          const res = (await callGPT({
+            prompt,
+            exchangerId: e.id,
+          })) as any;
+
+          console.log(` ✅ \u001b[1;32m Blocks: ${textBlocks.length}`);
+
+          if (res) {
+            const updatedData: any = {
+              id: e.id,
+              ru_description: res.ru_description || null,
+              en_description: res.en_description || null,
+              telegram: res.telegram || null,
+              email: res.email || null,
+              working_time: res.working_time || null,
+              admin_rating: generateRating(),
+            };
+
+            await callStrapi(UpdateDescriptions, updatedData);
+            console.log(`📙 \u001b[1;33m ${e.id} filled!`);
+          }
+        }
+        await sleep(5000);
       }
-      await sleep(5000);
+    } catch (err) {
+      console.error(`Error: ${(err as Error).message}`);
+      reply.send("Some error occurred.");
+    } finally {
+      await browser.close();
     }
-  } catch (err) {
-    reply.send(`some error ffs`);
   }
-});
+);
 
 server.get("/fillrefs", async (req: any, reply) => {
   reply.header("Access-Control-Allow-Origin", "*");

@@ -1,3 +1,4 @@
+import puppeteer, { Browser } from "puppeteer";
 import OpenAI from "openai";
 import db from "../db";
 import { sleep, createArticle } from "../helper";
@@ -78,8 +79,13 @@ export const callGPT = async ({
 };
 
 export const trimTextValues = (
-  arr: { tag: string; text: string }[]
+  arr: { tag: string; text: string }[] | null | undefined
 ): { tag: string; text: string }[] => {
+  if (!Array.isArray(arr)) {
+    console.error("trimTextValues received non-array input:", arr);
+    return []; // Return an empty array to prevent errors
+  }
+
   return arr.map((item) => ({
     tag: item.tag,
     text: item.text.slice(0, 4000),
@@ -88,3 +94,35 @@ export const trimTextValues = (
 
 export const generateRating = () =>
   +(Math.random() * (5 - 3.4) + 3.4).toFixed(2);
+
+export async function fetchWithPuppeteer(
+  browser: Browser,
+  url: string
+): Promise<string | null> {
+  try {
+    console.log("fetching ", url);
+    const page = await browser.newPage();
+
+    // Set a real User-Agent and headers
+    await page.setUserAgent(
+      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36"
+    );
+    await page.setExtraHTTPHeaders({
+      "Accept-Language": "en-US,en;q=0.9",
+      Referer: "https://www.google.com/",
+    });
+
+    await page.goto(url, { waitUntil: "domcontentloaded", timeout: 30000 });
+
+    // Wait for JavaScript-rendered content (if necessary)
+    await new Promise((resolve) => setTimeout(resolve, 3000)); // Replacing waitForTimeout
+
+    const content = await page.evaluate(() => document.body.innerText);
+    await page.close();
+
+    return content;
+  } catch (error) {
+    console.error(`❌ Error fetching ${url}: ${(error as Error).message}`);
+    return null;
+  }
+}

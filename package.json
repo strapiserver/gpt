@@ -17,7 +17,10 @@
     "graphql": "^16.7.1",
     "graphql-request": "^6.1.0",
     "node-json-db": "^1.4.1",
-    "openai": "^4.78.0"
+    "openai": "^4.78.0",
+    "puppeteer": "^24.4.0",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2"
   },
   "devDependencies": {
     "@types/node": "^18.11.6",
