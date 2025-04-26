@@ -1,49 +1,57 @@
-import axios from "axios";
-import * as cheerio from "cheerio";
-import { writeMyFile } from "../fileHandler";
-import { run } from "node:test";
-import { IDescriptionData } from "../types";
+import { IExchangerData, IPrompt } from "../types";
+import callStrapi from "../services/callStrapi";
+import { sleep } from "../helper";
+import {
+  PromptsQuery,
+  LinksQuery,
+  UpdateDescriptions,
+} from "../services/queries";
+import { callGPT, findPrompt } from "../services/gpt";
 
-function isSimilarText(
-  existingTexts: string[],
-  newText: string,
-  threshold: number = 0.5
-): boolean {
-  return existingTexts.some((existingText) => {
-    const words1 = new Set(existingText.split(" "));
-    const words2 = new Set(newText.split(" "));
-    const commonWords = [...words1].filter((word) => words2.has(word)).length;
-    const similarity = commonWords / Math.max(words1.size, words2.size);
-    return similarity > threshold;
-  });
-}
-export async function fetchTextBlocks(url: string) {
+import { scrape } from "../services/cheerio";
+
+export const generateRating = () =>
+  +(Math.random() * (5 - 3.4) + 3.4).toFixed(2);
+
+export const filldescriptions = async () => {
   try {
-    const { data } = await axios.get(url);
-    const $ = cheerio.load(data);
+    const promptDescription = await findPrompt("exchanger_description");
 
-    const textBlocks: { tag: string; text: string; href?: string }[] = [];
+    const data = await callStrapi(LinksQuery);
+    const exchangers = data.exchangers.filter(
+      (e: any) => e.ref_link
+    ) as IExchangerData[];
+    console.log(`Exchangers without description found: ${exchangers.length}`);
 
-    $("body *").each((_, element) => {
-      const text = $(element).text().replace(/\s+/g, " ").trim();
-      const tag = element.tagName;
+    for (let e of exchangers) {
+      const textBlocks = await scrape(e.ref_link);
+      if (textBlocks) {
+        const prompt = promptDescription + " " + textBlocks;
+        const res = (await callGPT(prompt, e.id)) as any;
 
-      // Extract links if it's an <a> tag
-      const href = tag === "a" ? $(element).attr("href") || "" : undefined;
+        console.log(` ✅ \u001b[1;32m ---------------------------`);
+        console.log(` ✅ \u001b[1;32m Blocks: ${textBlocks.length}`);
+        console.log(` ✅ \u001b[1;32m ___________________________`);
 
-      if (
-        text.length > 20 &&
-        !isSimilarText(
-          textBlocks.map((tb) => tb.text),
-          text
-        )
-      ) {
-        textBlocks.push({ tag, text, ...(href ? { href } : {}) });
+        if (res) {
+          const data = {
+            id: e.id,
+            ru_description: res.ru_description || null,
+            en_description: res.en_description || null,
+            telegram: res.telegram || null,
+            email: res.email || null,
+            working_time: res.working_time || null,
+            admin_rating: generateRating(),
+          };
+
+          await callStrapi(UpdateDescriptions, data);
+          console.log(`📙 \u001b[1;33m ${e.id} filled!`);
+        }
+        // reply.send(JSON.stringify(res));
       }
-    });
-    return textBlocks;
-  } catch (error) {
-    console.error(`Failed to fetch ${url}:`, error);
-    return null;
+      await sleep(5000);
+    }
+  } catch (err) {
+    console.log(err);
   }
-}
+};

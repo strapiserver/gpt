@@ -101,12 +101,12 @@ export const PmGroupsQuery = gql`
 export const LinksQuery = gql`
   {
     exchangers(
-      pagination: { limit: 1000 }
-      filters: { ru_description: { notNull: false } }
+      pagination: { limit: 1000 } # filters: { ru_description: { notNull: false } }
     ) {
       data {
         id
         attributes {
+          name
           rates_link
           ref_link
         }
@@ -154,6 +154,32 @@ export const UpdateDescriptions = gql`
         email: $email
         working_time: $working_time
         admin_rating: $admin_rating
+      }
+    ) {
+      data {
+        id
+      }
+    }
+  }
+`;
+
+export const CreateExchangerBC = gql`
+  mutation createExchangerBC(
+    $name: String
+    $status: ENUM_EXCHANGER_STATUS
+    $rates_link: String
+    $ref_link: String
+    $admin_rating: Float
+    $bc_card_link: String
+  ) {
+    createExchanger(
+      data: {
+        name: $name
+        status: $status
+        rates_link: $rates_link
+        ref_link: $ref_link
+        admin_rating: $admin_rating
+        exchanger_card: { bc_card_link: $bc_card_link }
       }
     ) {
       data {

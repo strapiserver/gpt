@@ -29,6 +29,15 @@ export interface IDescriptionData {
 
 export interface IExchangerData {
   id: string;
+  name: string;
   rates_link: string;
   ref_link: string;
+}
+
+export interface IScrapedBC {
+  name: string;
+  link: string;
+  card: string;
+  real_link?: string;
+  xml?: string;
 }

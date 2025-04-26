@@ -1,0 +1,2712 @@
+[
+  {
+    "name": "HotExchange",
+    "link": "/click.php?id=372",
+    "card": "/hotexchange-exchanger.html",
+    "real_link": "https://hot24.exchange"
+  },
+  {
+    "name": "Ukr-Obmen",
+    "link": "/click.php?id=291",
+    "card": "/ukr-obmen-exchanger.html",
+    "real_link": "https://ukr-obmen.com"
+  },
+  {
+    "name": "Kingex",
+    "link": "/click.php?id=1141",
+    "card": "/kingex-exchanger.html",
+    "real_link": "https://kingex.io"
+  },
+  {
+    "name": "24BestEx",
+    "link": "/click.php?id=618",
+    "card": "/24bestex-exchanger.html",
+    "real_link": "https://24bestex.com",
+    "xml": "https://24bestex.com/request-exportxml.xml"
+  },
+  {
+    "name": "C4Changer",
+    "link": "/click.php?id=1152",
+    "card": "/c4changer-exchanger.html",
+    "real_link": "https://uae.c4changer.com",
+    "xml": "https://uae.c4changer.com/request-exportxml.xml"
+  },
+  {
+    "name": "NextCoin",
+    "link": "/click.php?id=1242",
+    "card": "/nextcoin-exchanger.html",
+    "real_link": "https://nextcoin.pro",
+    "xml": "https://nextcoin.pro/service/export/xml"
+  },
+  {
+    "name": "1Mile",
+    "link": "/click.php?id=686",
+    "card": "/1mile-exchanger.html",
+    "real_link": "https://1mile.co"
+  },
+  {
+    "name": "ClickPay",
+    "link": "/click.php?id=1034",
+    "card": "/clickpay-exchanger.html",
+    "real_link": "https://clickpay.cx"
+  },
+  {
+    "name": "XChanger",
+    "link": "/click.php?id=1110",
+    "card": "/xchanger-exchanger.html",
+    "real_link": "https://xchanger.pk",
+    "xml": "https://xchanger.pk/request-exportxml.xml"
+  },
+  {
+    "name": "Mine",
+    "link": "/click.php?id=521",
+    "card": "/mine-exchanger.html",
+    "real_link": "https://mine.exchange"
+  },
+  {
+    "name": "Magnatus",
+    "link": "/click.php?id=468",
+    "card": "/magnatus-exchanger.html",
+    "real_link": "https://magnatus.com"
+  },
+  {
+    "name": "UAchanger",
+    "link": "/click.php?id=950",
+    "card": "/uachanger-exchanger.html",
+    "real_link": "https://uachanger.com",
+    "xml": "https://uachanger.com/request-exportxml.xml"
+  },
+  {
+    "name": "Transfer24",
+    "link": "/click.php?id=565",
+    "card": "/transfer24-exchanger.html",
+    "real_link": "https://transfer24.pro",
+    "xml": "https://transfer24.pro/request-exportxml.xml"
+  },
+  {
+    "name": "7Money",
+    "link": "/click.php?id=588",
+    "card": "/7money-exchanger.html",
+    "real_link": "https://7money.co"
+  },
+  {
+    "name": "Moneta365",
+    "link": "/click.php?id=1216",
+    "card": "/moneta365-exchanger.html",
+    "real_link": "https://moneta365.com",
+    "xml": "https://moneta365.com/service/export/xml"
+  },
+  {
+    "name": "AvanChange",
+    "link": "/click.php?id=1013",
+    "card": "/avanchange-exchanger.html",
+    "real_link": "https://avanchange.com"
+  },
+  {
+    "name": "1WM",
+    "link": "/click.php?id=337",
+    "card": "/1wm-exchanger.html",
+    "real_link": "https://1wm.io",
+    "xml": "https://1wm.io/export.xml"
+  },
+  {
+    "name": "WmMoney",
+    "link": "/click.php?id=730",
+    "card": "/wmmoney-exchanger.html",
+    "real_link": "https://wm.money",
+    "xml": "https://wm.money/request-exportxml.xml"
+  },
+  {
+    "name": "TrustMeCash",
+    "link": "/click.php?id=1241",
+    "card": "/trustmecash-exchanger.html",
+    "real_link": "https://trustmecash.net",
+    "xml": "https://trustmecash.net/request-exportxml.xml"
+  },
+  {
+    "name": "Exchanging",
+    "link": "/click.php?id=330",
+    "card": "/exchanging-exchanger.html",
+    "real_link": "https://exchanging.app",
+    "xml": "https://exchanging.app/rates.xml"
+  },
+  {
+    "name": "FlashObmen",
+    "link": "/click.php?id=761",
+    "card": "/flashobmen-exchanger.html",
+    "real_link": "https://en.flashobmen.com",
+    "xml": "https://en.flashobmen.com/exportxml.xml"
+  },
+  {
+    "name": "Vobmenka",
+    "link": "/click.php?id=898",
+    "card": "/vobmenka-exchanger.html",
+    "real_link": "https://vobmenka.com",
+    "xml": "https://vobmenka.com/export.xml"
+  },
+  {
+    "name": "BtcChange24",
+    "link": "/click.php?id=466",
+    "card": "/btcchange24-exchanger.html",
+    "real_link": "https://btcchange24.com",
+    "xml": "https://btcchange24.com/service/export/xml"
+  },
+  {
+    "name": "BTC2Pay",
+    "link": "/click.php?id=640",
+    "card": "/btc2pay-exchanger.html",
+    "real_link": "https://btc2pay.org",
+    "xml": "https://btc2pay.org/export.xml"
+  },
+  {
+    "name": "CoinCraddle",
+    "link": "/click.php?id=1161",
+    "card": "/coincraddle-exchanger.html",
+    "real_link": "https://coincraddle.com"
+  },
+  {
+    "name": "FixedFloat",
+    "link": "/click.php?id=858",
+    "card": "/fixedfloat-exchanger.html",
+    "real_link": "https://ff.io"
+  },
+  {
+    "name": "ImExchanger",
+    "link": "/click.php?id=473",
+    "card": "/imexchanger-exchanger.html",
+    "real_link": "https://imexchanger.pro",
+    "xml": "https://imexchanger.pro/export/xml"
+  },
+  {
+    "name": "OpenChange",
+    "link": "/click.php?id=405",
+    "card": "/openchange-exchanger.html",
+    "real_link": "https://openchange.is",
+    "xml": "https://openchange.is/export/xml"
+  },
+  {
+    "name": "Rexexio",
+    "link": "/click.php?id=1284",
+    "card": "/rexexio-exchanger.html",
+    "real_link": "https://rexex.io"
+  },
+  {
+    "name": "Monease",
+    "link": "/click.php?id=1170",
+    "card": "/monease-exchanger.html",
+    "real_link": "https://monease.exchange"
+  },
+  {
+    "name": "ShapeBTC",
+    "link": "/click.php?id=1263",
+    "card": "/shapebtc-exchanger.html",
+    "real_link": "https://shapebtc.com"
+  },
+  {
+    "name": "Top-Exchange",
+    "link": "/click.php?id=714",
+    "card": "/top-exchange-exchanger.html",
+    "real_link": "https://en.top-exchange.com"
+  },
+  {
+    "name": "ExHub",
+    "link": "/click.php?id=942",
+    "card": "/exhub-exchanger.html",
+    "real_link": "https://exhub.io"
+  },
+  {
+    "name": "F-Change",
+    "link": "/click.php?id=584",
+    "card": "/f-change-exchanger.html",
+    "real_link": "https://en.f-change.biz",
+    "xml": "https://en.f-change.biz/exportxml.xml"
+  },
+  {
+    "name": "111Obmen",
+    "link": "/click.php?id=1154",
+    "card": "/111obmen-exchanger.html",
+    "real_link": "https://111obmen.com",
+    "xml": "https://111obmen.com/service/export/xml"
+  },
+  {
+    "name": "Paynote",
+    "link": "/click.php?id=1068",
+    "card": "/paynote-exchanger.html",
+    "real_link": "https://paynote.eu",
+    "xml": "https://paynote.eu/request-exportxml.xml"
+  },
+  {
+    "name": "EExchanger",
+    "link": "/click.php?id=944",
+    "card": "/eexchanger-exchanger.html",
+    "real_link": "https://eexchanger.co",
+    "xml": "https://eexchanger.co/rates.xml"
+  },
+  {
+    "name": "Coco-Pay",
+    "link": "/click.php?id=949",
+    "card": "/coco-pay-exchanger.html",
+    "real_link": "https://coco-pay.com",
+    "xml": "https://coco-pay.com/request-exportxml.xml"
+  },
+  {
+    "name": "Papa-Change",
+    "link": "/click.php?id=702",
+    "card": "/papa-change-exchanger.html",
+    "real_link": "https://en.papa-change.com",
+    "xml": "https://en.papa-change.com/exportxml.xml"
+  },
+  {
+    "name": "ExchangeX",
+    "link": "/click.php?id=51",
+    "card": "/exchangex-exchanger.html",
+    "real_link": "https://exchangex.biz"
+  },
+  {
+    "name": "CoinTok",
+    "link": "/click.php?id=1122",
+    "card": "/cointok-exchanger.html",
+    "real_link": "https://cointok.net",
+    "xml": "https://cointok.net/request-exportxml.xml"
+  },
+  {
+    "name": "WxMoney",
+    "link": "/click.php?id=982",
+    "card": "/wxmoney-exchanger.html",
+    "real_link": "https://wx.money",
+    "xml": "https://wx.money/export.xml"
+  },
+  {
+    "name": "E-Scrooge",
+    "link": "/click.php?id=239",
+    "card": "/e-scrooge-exchanger.html",
+    "real_link": "https://e-scrooge.is"
+  },
+  {
+    "name": "2rbina",
+    "link": "/click.php?id=790",
+    "card": "/2rbina-exchanger.html",
+    "real_link": "https://2rbina.net",
+    "xml": "https://2rbina.net/request-exportxml.xml"
+  },
+  {
+    "name": "Changelly",
+    "link": "/click.php?id=612",
+    "card": "/changelly-exchanger.html",
+    "real_link": "https://changelly.com"
+  },
+  {
+    "name": "LasloBit",
+    "link": "/click.php?id=652",
+    "card": "/laslobit-exchanger.html",
+    "real_link": "https://laslobit.cc"
+  },
+  {
+    "name": "CryptoChicken",
+    "link": "/click.php?id=1250",
+    "card": "/cryptochicken-exchanger.html",
+    "real_link": "https://crypto-chicken.co",
+    "xml": "https://crypto-chicken.co/request-exportxml.xml"
+  },
+  {
+    "name": "WMChanger",
+    "link": "/click.php?id=981",
+    "card": "/wmchanger-exchanger.html",
+    "real_link": "https://wmchanger.net"
+  },
+  {
+    "name": "D-Obmen",
+    "link": "/click.php?id=362",
+    "card": "/d-obmen-exchanger.html",
+    "real_link": "https://d-obmen.cc"
+  },
+  {
+    "name": "First-BTC",
+    "link": "/click.php?id=1056",
+    "card": "/first-btc-exchanger.html",
+    "real_link": "https://first-btc.io",
+    "xml": "https://first-btc.io/export.xml"
+  },
+  {
+    "name": "El-Change",
+    "link": "/click.php?id=614",
+    "card": "/el-change-exchanger.html",
+    "real_link": "https://en.el-change.com",
+    "xml": "https://en.el-change.com/exportxml.xml"
+  },
+  {
+    "name": "GoExme",
+    "link": "/click.php?id=1220",
+    "card": "/goexme-exchanger.html",
+    "real_link": "https://goexme.io"
+  },
+  {
+    "name": "CoinDrop",
+    "link": "/click.php?id=1071",
+    "card": "/coindrop-exchanger.html",
+    "real_link": "https://coindrop.trade",
+    "xml": "https://coindrop.trade/public/rates.xml"
+  },
+  {
+    "name": "PayExchanger",
+    "link": "/click.php?id=396",
+    "card": "/payexchanger-exchanger.html",
+    "real_link": "https://payexchanger.com",
+    "xml": "https://payexchanger.com/service/export/xml"
+  },
+  {
+    "name": "CyberBTC",
+    "link": "/click.php?id=707",
+    "card": "/cyberbtc-exchanger.html",
+    "real_link": "https://cyberbtc.com"
+  },
+  {
+    "name": "City-Exchange",
+    "link": "/click.php?id=382",
+    "card": "/city-exchange-exchanger.html",
+    "real_link": "https://city-exchange.io"
+  },
+  {
+    "name": "Rebex",
+    "link": "/click.php?id=1286",
+    "card": "/rebex-exchanger.html",
+    "real_link": "https://rebex.io",
+    "xml": "https://rebex.io/export.xml"
+  },
+  {
+    "name": "Bitmore",
+    "link": "/click.php?id=1240",
+    "card": "/bitmore-exchanger.html",
+    "real_link": "https://bitmore.io"
+  },
+  {
+    "name": "Changer4u",
+    "link": "/click.php?id=472",
+    "card": "/changer4u-exchanger.html",
+    "real_link": "https://changer4u.com"
+  },
+  {
+    "name": "AlfaBit",
+    "link": "/click.php?id=955",
+    "card": "/alfabit-exchanger.html",
+    "real_link": "https://alfabit.org"
+  },
+  {
+    "name": "ObmenMoney",
+    "link": "/click.php?id=609",
+    "card": "/obmenmoney-exchanger.html",
+    "real_link": "https://obmen.money",
+    "xml": "https://obmen.money/request-exportxml.xml"
+  },
+  {
+    "name": "Receive-Money",
+    "link": "/click.php?id=421",
+    "card": "/receive-money-exchanger.html",
+    "real_link": "https://receive-money.biz",
+    "xml": "https://receive-money.biz/request-exportxml.xml"
+  },
+  {
+    "name": "365Cash",
+    "link": "/click.php?id=387",
+    "card": "/365cash-exchanger.html",
+    "real_link": "https://365cash.co"
+  },
+  {
+    "name": "EpiChange",
+    "link": "/click.php?id=1196",
+    "card": "/epichange-exchanger.html",
+    "real_link": "https://epichange.online",
+    "xml": "https://epichange.online/request-exportxml.xml"
+  },
+  {
+    "name": "Swappix",
+    "link": "/click.php?id=1294",
+    "card": "/swappix-exchanger.html",
+    "real_link": "https://swappix.io"
+  },
+  {
+    "name": "Sova",
+    "link": "/click.php?id=1006",
+    "card": "/sova-exchanger.html",
+    "real_link": "https://sova.gg",
+    "xml": "https://sova.gg/valuta.xml"
+  },
+  {
+    "name": "AnyExchange",
+    "link": "/click.php?id=1041",
+    "card": "/anyexchange-exchanger.html",
+    "real_link": "https://anyexchange.best",
+    "xml": "https://anyexchange.best/request-exportxml.xml"
+  },
+  {
+    "name": "DualCoin",
+    "link": "/click.php?id=1319",
+    "card": "/dualcoin-exchanger.html",
+    "real_link": "https://dualcoin.io"
+  },
+  {
+    "name": "Crypto-Dom",
+    "link": "/click.php?id=1119",
+    "card": "/crypto-dom-exchanger.html",
+    "real_link": "https://crypto-dom.com"
+  },
+  {
+    "name": "ProstovCash",
+    "link": "/click.php?id=622",
+    "card": "/prostovcash-exchanger.html",
+    "real_link": "https://prostovcash.com",
+    "xml": "https://prostovcash.com/valuta.xml"
+  },
+  {
+    "name": "ChangeHero",
+    "link": "/click.php?id=874",
+    "card": "/changehero-exchanger.html",
+    "real_link": "https://changehero.io"
+  },
+  {
+    "name": "ChangeNow",
+    "link": "/click.php?id=757",
+    "card": "/changenow-exchanger.html",
+    "real_link": "https://changenow.io"
+  },
+  {
+    "name": "Clean-Exchange",
+    "link": "/click.php?id=1069",
+    "card": "/clean-exchange-exchanger.html",
+    "real_link": "https://clean-exchange.com"
+  },
+  {
+    "name": "ObmenoFF",
+    "link": "/click.php?id=585",
+    "card": "/obmenoff-exchanger.html",
+    "real_link": "https://obmenoff.cc",
+    "xml": "https://obmenoff.cc/request-exportxml.xml"
+  },
+  {
+    "name": "Best-Obmen",
+    "link": "/click.php?id=626",
+    "card": "/best-obmen-exchanger.html",
+    "real_link": "https://best-obmen.co",
+    "xml": "https://best-obmen.co/export.xml"
+  },
+  {
+    "name": "CoinBlinker",
+    "link": "/click.php?id=1074",
+    "card": "/coinblinker-exchanger.html",
+    "real_link": "https://coinblinker.me",
+    "xml": "https://coinblinker.me/valuta.xml"
+  },
+  {
+    "name": "Crypto007",
+    "link": "/click.php?id=1365",
+    "card": "/crypto007-exchanger.html",
+    "real_link": "https://crypto007.net",
+    "xml": "https://crypto007.net/service/export/xml"
+  },
+  {
+    "name": "YChanger",
+    "link": "/click.php?id=633",
+    "card": "/ychanger-exchanger.html",
+    "real_link": "https://ychangers.net",
+    "xml": "https://ychangers.net/valuta.xml"
+  },
+  {
+    "name": "ExchangeForMe",
+    "link": "/click.php?id=1086",
+    "card": "/exchangeforme-exchanger.html",
+    "real_link": "https://exchangefor.me"
+  },
+  {
+    "name": "JetMonet",
+    "link": "/click.php?id=881",
+    "card": "/jetmonet-exchanger.html",
+    "real_link": "https://jetmonet.com",
+    "xml": "https://jetmonet.com/request-exportxml.xml"
+  },
+  {
+    "name": "Fiatex",
+    "link": "/click.php?id=1283",
+    "card": "/fiatex-exchanger.html",
+    "real_link": "https://fiatex.pro"
+  },
+  {
+    "name": "DigiChanger",
+    "link": "/click.php?id=1160",
+    "card": "/digichanger-exchanger.html",
+    "real_link": "https://digichanger.pro",
+    "xml": "https://digichanger.pro/service/export/xml"
+  },
+  {
+    "name": "CryptoXchange",
+    "link": "/click.php?id=1035",
+    "card": "/cryptoxchange-exchanger.html",
+    "real_link": "https://cryptoxchange.cc"
+  },
+  {
+    "name": "Kassa",
+    "link": "/click.php?id=522",
+    "card": "/kassa-exchanger.html",
+    "real_link": "https://kassa.cc",
+    "xml": "https://kassa.cc/assets/rates.xml"
+  },
+  {
+    "name": "HiExchange",
+    "link": "/click.php?id=1040",
+    "card": "/hiexchange-exchanger.html",
+    "real_link": "https://hi.exchange"
+  },
+  {
+    "name": "SwapEx",
+    "link": "/click.php?id=1181",
+    "card": "/swapex-exchanger.html",
+    "real_link": "https://swapex.cc"
+  },
+  {
+    "name": "SimpleSwap",
+    "link": "/click.php?id=778",
+    "card": "/simpleswap-exchanger.html",
+    "real_link": "https://simpleswap.io"
+  },
+  {
+    "name": "Dvizh",
+    "link": "/click.php?id=1175",
+    "card": "/dvizh-exchanger.html",
+    "real_link": "https://dvizh.com",
+    "xml": "https://dvizh.com/service/export/xml"
+  },
+  {
+    "name": "Brabus",
+    "link": "/click.php?id=1276",
+    "card": "/brabus-exchanger.html",
+    "real_link": "https://brabus.exchange"
+  },
+  {
+    "name": "YoChange",
+    "link": "/click.php?id=840",
+    "card": "/yochange-exchanger.html",
+    "real_link": "https://yochange.com",
+    "xml": "https://yochange.com/courses.xml"
+  },
+  {
+    "name": "BaksMan",
+    "link": "/click.php?id=517",
+    "card": "/baksman-exchanger.html",
+    "real_link": "https://baksmany.com",
+    "xml": "https://baksmany.com/valuta.xml"
+  },
+  {
+    "name": "TopCash",
+    "link": "/click.php?id=943",
+    "card": "/topcash-exchanger.html",
+    "real_link": "https://topcash24.me",
+    "xml": "https://topcash24.me/rates.xml"
+  },
+  {
+    "name": "1654Exchange",
+    "link": "/click.php?id=1124",
+    "card": "/1654exchange-exchanger.html",
+    "real_link": "https://1654.exchange",
+    "xml": "https://1654.exchange/request-exportxml.xml"
+  },
+  {
+    "name": "Exwp",
+    "link": "/click.php?id=48",
+    "card": "/exwp-exchanger.html",
+    "real_link": "https://exwp.com"
+  },
+  {
+    "name": "WestChange",
+    "link": "/click.php?id=438",
+    "card": "/westchange-exchanger.html",
+    "real_link": "https://westchange.top"
+  },
+  {
+    "name": "24PayBank",
+    "link": "/click.php?id=417",
+    "card": "/24paybank-exchanger.html",
+    "real_link": "https://24paybanks.me",
+    "xml": "https://24paybanks.me/valuta.xml"
+  },
+  {
+    "name": "MyCryptoMarket",
+    "link": "/click.php?id=668",
+    "card": "/mycryptomarket-exchanger.html",
+    "real_link": "https://mycrypto.market",
+    "xml": "https://mycrypto.market/request-exportxml.xml"
+  },
+  {
+    "name": "Xenex",
+    "link": "/click.php?id=1039",
+    "card": "/xenex-exchanger.html",
+    "real_link": "https://xenex.site"
+  },
+  {
+    "name": "PoTeme",
+    "link": "/click.php?id=1139",
+    "card": "/poteme-exchanger.html",
+    "real_link": "https://poteme.com",
+    "xml": "https://poteme.com/service/export/xml"
+  },
+  {
+    "name": "CryptoRoyal",
+    "link": "/click.php?id=1266",
+    "card": "/cryptoroyal-exchanger.html",
+    "real_link": "https://cryptoroyal.exchange"
+  },
+  {
+    "name": "001K",
+    "link": "/click.php?id=1019",
+    "card": "/001k-exchanger.html",
+    "real_link": "https://001k.exchange",
+    "xml": "https://api.001k.exchange/exportxmlfile"
+  },
+  {
+    "name": "EezyCash",
+    "link": "/click.php?id=1005",
+    "card": "/eezycash-exchanger.html",
+    "real_link": "https://eezy.cash",
+    "xml": "https://eezy.cash/request-exportxml.xml"
+  },
+  {
+    "name": "Cash-Bit",
+    "link": "/click.php?id=984",
+    "card": "/cash-bit-exchanger.html",
+    "real_link": "https://cash-bit.com",
+    "xml": "https://cash-bit.com/rates.xml"
+  },
+  {
+    "name": "PremierCash",
+    "link": "/click.php?id=975",
+    "card": "/premiercash-exchanger.html",
+    "real_link": "https://premier.cash"
+  },
+  {
+    "name": "GeekChange",
+    "link": "/click.php?id=1289",
+    "card": "/geekchange-exchanger.html",
+    "real_link": "https://geekchange.com"
+  },
+  {
+    "name": "W-Box",
+    "link": "/click.php?id=157",
+    "card": "/w-box-exchanger.html",
+    "real_link": "https://w-box.io",
+    "xml": "https://w-box.io/request-exportxml.xml"
+  },
+  {
+    "name": "FastWM",
+    "link": "/click.php?id=531",
+    "card": "/fastwm-exchanger.html",
+    "real_link": "https://fastwm.biz",
+    "xml": "https://fastwm.biz/valuta.xml"
+  },
+  {
+    "name": "Satoshi",
+    "link": "/click.php?id=921",
+    "card": "/satoshi-exchanger.html",
+    "real_link": "https://satoshi.cx",
+    "xml": "https://satoshi.cx/request-exportxml.xml"
+  },
+  {
+    "name": "YaObmen",
+    "link": "/click.php?id=1095",
+    "card": "/yaobmen-exchanger.html",
+    "real_link": "https://yaobmen.cash",
+    "xml": "https://yaobmen.cash/request-exportxml.xml"
+  },
+  {
+    "name": "Crypto-Trans",
+    "link": "/click.php?id=1229",
+    "card": "/crypto-trans-exchanger.html",
+    "real_link": "https://crypto-trans.com",
+    "xml": "https://crypto-trans.com/rates.xml"
+  },
+  {
+    "name": "Ferma",
+    "link": "/click.php?id=661",
+    "card": "/ferma-exchanger.html",
+    "real_link": "https://ferma.cc",
+    "xml": "https://ferma.cc/valuta.xml"
+  },
+  {
+    "name": "ExWallets",
+    "link": "/click.php?id=682",
+    "card": "/exwallets-exchanger.html",
+    "real_link": "https://exwallets.com"
+  },
+  {
+    "name": "ExWm",
+    "link": "/click.php?id=1004",
+    "card": "/exwm-exchanger.html",
+    "real_link": "https://exwm.cc",
+    "xml": "https://exwm.cc/request-exportxml.xml"
+  },
+  {
+    "name": "BelkaPay",
+    "link": "/click.php?id=1189",
+    "card": "/belkapay-exchanger.html",
+    "real_link": "https://belkapay.cc"
+  },
+  {
+    "name": "CoinTransfer",
+    "link": "/click.php?id=430",
+    "card": "/cointransfer-exchanger.html",
+    "real_link": "https://cointransfer.online"
+  },
+  {
+    "name": "Crybex",
+    "link": "/click.php?id=960",
+    "card": "/crybex-exchanger.html",
+    "real_link": "https://crybex.com",
+    "xml": "https://crybex.com/request-exportxml.xml"
+  },
+  {
+    "name": "NewLine",
+    "link": "/click.php?id=539",
+    "card": "/newline-exchanger.html",
+    "real_link": "https://newline.online"
+  },
+  {
+    "name": "60sek",
+    "link": "/click.php?id=607",
+    "card": "/60sek-exchanger.html",
+    "real_link": "https://60sek.net",
+    "xml": "https://60sek.net/valuta.xml"
+  },
+  {
+    "name": "CoinGuru",
+    "link": "/click.php?id=915",
+    "card": "/coinguru-exchanger.html",
+    "real_link": "https://coinguru.pw"
+  },
+  {
+    "name": "CryptoMoney",
+    "link": "/click.php?id=606",
+    "card": "/cryptomoney-exchanger.html",
+    "real_link": "https://cryptomoney.pro"
+  },
+  {
+    "name": "Metka",
+    "link": "/click.php?id=1165",
+    "card": "/metka-exchanger.html",
+    "real_link": "https://metka.cc",
+    "xml": "https://metka.cc/valuta.xml"
+  },
+  {
+    "name": "EuroBit",
+    "link": "/click.php?id=939",
+    "card": "/eurobit-exchanger.html",
+    "real_link": "https://eurobit.cc"
+  },
+  {
+    "name": "1-Online",
+    "link": "/click.php?id=659",
+    "card": "/1-online-exchanger.html",
+    "real_link": "https://1-online.ru"
+  },
+  {
+    "name": "NicexChanger",
+    "link": "/click.php?id=764",
+    "card": "/nicexchanger-exchanger.html",
+    "real_link": "https://nicexchanger.cc",
+    "xml": "https://nicexchanger.cc/valuta.xml"
+  },
+  {
+    "name": "BtcTenge",
+    "link": "/click.php?id=658",
+    "card": "/btctenge-exchanger.html",
+    "real_link": "https://btctenge.com"
+  },
+  {
+    "name": "TheChange",
+    "link": "/click.php?id=1387",
+    "card": "/thechange-exchanger.html",
+    "real_link": "https://thechange.ltd"
+  },
+  {
+    "name": "Xchange",
+    "link": "/click.php?id=184",
+    "card": "/xchange-exchanger.html",
+    "real_link": "https://xchange.fund",
+    "xml": "https://xchange.fund/valuta.xml"
+  },
+  {
+    "name": "NovaChange",
+    "link": "/click.php?id=1313",
+    "card": "/novachange-exchanger.html",
+    "real_link": "https://novachange.cc",
+    "xml": "https://novachange.cc/service/export/xml"
+  },
+  {
+    "name": "PayGet",
+    "link": "/click.php?id=625",
+    "card": "/payget-exchanger.html",
+    "real_link": "https://payget.pro"
+  },
+  {
+    "name": "AtPayz",
+    "link": "/click.php?id=1078",
+    "card": "/atpayz-exchanger.html",
+    "real_link": "https://atpayz.com",
+    "xml": "https://atpayz.com/request-exportxml.xml"
+  },
+  {
+    "name": "CoinShop24",
+    "link": "/click.php?id=899",
+    "card": "/coinshop24-exchanger.html",
+    "real_link": "https://coinshop24.org"
+  },
+  {
+    "name": "Micro-exchange",
+    "link": "/click.php?id=917",
+    "card": "/micro-exchange-exchanger.html",
+    "real_link": "https://micro-exchange.me",
+    "xml": "https://micro-exchange.me/request-exportxml.xml"
+  },
+  {
+    "name": "Paynoom",
+    "link": "/click.php?id=1271",
+    "card": "/paynoom-exchanger.html",
+    "real_link": "https://paynoom.com"
+  },
+  {
+    "name": "AbcObmen",
+    "link": "/click.php?id=948",
+    "card": "/abcobmen-exchanger.html",
+    "real_link": "https://abcobmen.net",
+    "xml": "https://abcobmen.net/valuta.xml"
+  },
+  {
+    "name": "IceBTC",
+    "link": "/click.php?id=793",
+    "card": "/icebtc-exchanger.html",
+    "real_link": "https://icebtc.me"
+  },
+  {
+    "name": "AppBit",
+    "link": "/click.php?id=1256",
+    "card": "/appbit-exchanger.html",
+    "real_link": "https://appbit.net",
+    "xml": "https://appbit.net/request-exportxml.xml"
+  },
+  {
+    "name": "CoinJoin",
+    "link": "/click.php?id=997",
+    "card": "/coinjoin-exchanger.html",
+    "real_link": "https://coinjoin.online",
+    "xml": "https://coinjoin.online/request-exportxml.xml"
+  },
+  {
+    "name": "ExLine",
+    "link": "/click.php?id=952",
+    "card": "/exline-exchanger.html",
+    "real_link": "https://exline.pro",
+    "xml": "https://exline.pro/request-exportxml.xml"
+  },
+  {
+    "name": "BitObmen",
+    "link": "/click.php?id=723",
+    "card": "/bitobmen-exchanger.html",
+    "real_link": "https://bitobmen.net",
+    "xml": "https://bitobmen.net/request-exportxml.xml"
+  },
+  {
+    "name": "SwapGate",
+    "link": "/click.php?id=1325",
+    "card": "/swapgate-exchanger.html",
+    "real_link": "https://swapgate.io"
+  },
+  {
+    "name": "Crypocto",
+    "link": "/click.php?id=1123",
+    "card": "/crypocto-exchanger.html",
+    "real_link": "https://crypocto.com"
+  },
+  {
+    "name": "CryptoPay24",
+    "link": "/click.php?id=540",
+    "card": "/cryptopay24-exchanger.html",
+    "real_link": "https://cryptopay24.com"
+  },
+  {
+    "name": "Alfacash",
+    "link": "/click.php?id=177",
+    "card": "/alfacash-exchanger.html",
+    "real_link": "https://alfa.cash",
+    "xml": "https://api.alfa.cash/rates.xml"
+  },
+  {
+    "name": "ECashExpert",
+    "link": "/click.php?id=1155",
+    "card": "/ecashexpert-exchanger.html",
+    "real_link": "https://ecash.expert"
+  },
+  {
+    "name": "Bit100k",
+    "link": "/click.php?id=1166",
+    "card": "/bit100k-exchanger.html",
+    "real_link": "https://bit100k.com",
+    "xml": "https://bit100k.com/request-exportxml.xml"
+  },
+  {
+    "name": "SwapCoin",
+    "link": "/click.php?id=848",
+    "card": "/swapcoin-exchanger.html",
+    "real_link": "https://swapcoin.cc"
+  },
+  {
+    "name": "MultiVal",
+    "link": "/click.php?id=223",
+    "card": "/multival-exchanger.html",
+    "real_link": "https://en.multival.is"
+  },
+  {
+    "name": "FastChange",
+    "link": "/click.php?id=488",
+    "card": "/fastchange-exchanger.html",
+    "real_link": "https://fastchange.me"
+  },
+  {
+    "name": "ArmChange",
+    "link": "/click.php?id=273",
+    "card": "/armchange-exchanger.html",
+    "real_link": "https://armchange.ru",
+    "xml": "https://armchange.ru/request-exportxml.xml"
+  },
+  {
+    "name": "UltraChange",
+    "link": "/click.php?id=346",
+    "card": "/ultrachange-exchanger.html",
+    "real_link": "https://ultrachange.biz"
+  },
+  {
+    "name": "Bankcomat",
+    "link": "/click.php?id=544",
+    "card": "/bankcomat-exchanger.html",
+    "real_link": "https://bankcomat.me",
+    "xml": "https://bankcomat.me/valuta.xml"
+  },
+  {
+    "name": "Global-Ex",
+    "link": "/click.php?id=963",
+    "card": "/global-ex-exchanger.html",
+    "real_link": "https://global-ex.cc",
+    "xml": "https://global-ex.cc/rates.xml"
+  },
+  {
+    "name": "IziBTC",
+    "link": "/click.php?id=1073",
+    "card": "/izibtc-exchanger.html",
+    "real_link": "https://izibtc.net"
+  },
+  {
+    "name": "LeoExchanger",
+    "link": "/click.php?id=619",
+    "card": "/leoexchanger-exchanger.html",
+    "real_link": "https://leoexchanger.net",
+    "xml": "https://leoexchanger.net/service/export/xml"
+  },
+  {
+    "name": "LemonchikCash",
+    "link": "/click.php?id=1202",
+    "card": "/lemonchikcash-exchanger.html",
+    "real_link": "https://lemonchik.cash",
+    "xml": "https://lemonchik.cash/request-exportxml.xml"
+  },
+  {
+    "name": "Crypster",
+    "link": "/click.php?id=827",
+    "card": "/crypster-exchanger.html",
+    "real_link": "https://crypster.net"
+  },
+  {
+    "name": "Go-Go",
+    "link": "/click.php?id=1340",
+    "card": "/go-go-exchanger.html",
+    "real_link": "https://go-go.exchange",
+    "xml": "https://go-go.exchange/service/export/xml"
+  },
+  {
+    "name": "XbitMoney",
+    "link": "/click.php?id=809",
+    "card": "/xbitmoney-exchanger.html",
+    "real_link": "https://xbit.money",
+    "xml": "https://xbit.money/request-exportxml.xml"
+  },
+  {
+    "name": "BroExchange",
+    "link": "/click.php?id=1008",
+    "card": "/broexchange-exchanger.html",
+    "real_link": "https://bro.exchange",
+    "xml": "https://bro.exchange/request-exportxml.xml"
+  },
+  {
+    "name": "Makoli",
+    "link": "/click.php?id=439",
+    "card": "/makoli-exchanger.html",
+    "real_link": "chrome-error:"
+  },
+  {
+    "name": "CoinsBlack",
+    "link": "/click.php?id=989",
+    "card": "/coinsblack-exchanger.html",
+    "real_link": "https://coins.black",
+    "xml": "https://coins.black/rates.xml"
+  },
+  {
+    "name": "4Money",
+    "link": "/click.php?id=969",
+    "card": "/4money-exchanger.html",
+    "real_link": "https://4money.me"
+  },
+  {
+    "name": "LetsChange",
+    "link": "/click.php?id=1144",
+    "card": "/letschange-exchanger.html",
+    "real_link": "https://letschange.biz"
+  },
+  {
+    "name": "PocketBank",
+    "link": "/click.php?id=1030",
+    "card": "/pocketbank-exchanger.html",
+    "real_link": "https://pocketbank.net",
+    "xml": "https://pocketbank.net/service/export/xml"
+  },
+  {
+    "name": "OneMoment",
+    "link": "/click.php?id=992",
+    "card": "/onemoment-exchanger.html",
+    "real_link": "https://onemoment.cc",
+    "xml": "https://onemoment.cc/valuta.xml"
+  },
+  {
+    "name": "AllCash",
+    "link": "/click.php?id=397",
+    "card": "/allcash-exchanger.html",
+    "real_link": "https://all.cash"
+  },
+  {
+    "name": "MoonLight",
+    "link": "/click.php?id=1386",
+    "card": "/moonlight-exchanger.html",
+    "real_link": "https://moonlightexchanger.com",
+    "xml": "https://moonlightexchanger.com/request-exportxml.xml"
+  },
+  {
+    "name": "VN-Exchange",
+    "link": "/click.php?id=1222",
+    "card": "/vn-exchange-exchanger.html",
+    "real_link": "https://vn-exchange.com"
+  },
+  {
+    "name": "CoinStart",
+    "link": "/click.php?id=855",
+    "card": "/coinstart-exchanger.html",
+    "real_link": "https://coinstart.cc",
+    "xml": "https://coinstart.cc/valuta.xml"
+  },
+  {
+    "name": "Lionex",
+    "link": "/click.php?id=460",
+    "card": "/lionex-exchanger.html",
+    "real_link": "https://lionex.net",
+    "xml": "https://lionex.net/request-exportxml.xml"
+  },
+  {
+    "name": "Bitok777",
+    "link": "/click.php?id=716",
+    "card": "/bitok777-exchanger.html",
+    "real_link": "https://bitok777.net",
+    "xml": "https://bitok777.net/request-exportxml.xml"
+  },
+  {
+    "name": "FloatChange",
+    "link": "/click.php?id=1194",
+    "card": "/floatchange-exchanger.html",
+    "real_link": "https://floatchange.com",
+    "xml": "https://floatchange.com/request-exportxml.xml"
+  },
+  {
+    "name": "Buycoin",
+    "link": "/click.php?id=1226",
+    "card": "/buycoin-exchanger.html",
+    "real_link": "https://buycoin.online"
+  },
+  {
+    "name": "Dashka",
+    "link": "/click.php?id=1197",
+    "card": "/dashka-exchanger.html",
+    "real_link": "https://dashka.exchange",
+    "xml": "https://dashka.exchange/request-exportxml.xml"
+  },
+  {
+    "name": "BitcoinObmennik",
+    "link": "/click.php?id=1223",
+    "card": "/bitcoinobmennik-exchanger.html",
+    "real_link": "https://bitcoinobmennik.com",
+    "xml": "https://bitcoinobmennik.com/service/export/xml"
+  },
+  {
+    "name": "BobrExchange",
+    "link": "/click.php?id=1312",
+    "card": "/bobr-exchanger.html",
+    "real_link": "https://bobr.exchange"
+  },
+  {
+    "name": "SuperChange",
+    "link": "/click.php?id=1",
+    "card": "/superchange-exchanger.html",
+    "real_link": "https://superchange.is",
+    "xml": "https://superchange.is/export.php"
+  },
+  {
+    "name": "CatChange",
+    "link": "/click.php?id=1168",
+    "card": "/catchange-exchanger.html",
+    "real_link": "https://1.catchange.org"
+  },
+  {
+    "name": "ZombieCash",
+    "link": "/click.php?id=1102",
+    "card": "/zombiecash-exchanger.html",
+    "real_link": "https://zombie.cash",
+    "xml": "https://zombie.cash/service/export/xml"
+  },
+  {
+    "name": "EliteObmen",
+    "link": "/click.php?id=830",
+    "card": "/eliteobmen-exchanger.html",
+    "real_link": "https://eliteobmen.com",
+    "xml": "https://eliteobmen.com/request-exportxml.xml"
+  },
+  {
+    "name": "CryptoVortex",
+    "link": "/click.php?id=1252",
+    "card": "/cryptovortex-exchanger.html",
+    "real_link": "https://cryptovortex.pro",
+    "xml": "https://cryptovortex.pro/request-exportxml.xml"
+  },
+  {
+    "name": "ChBy",
+    "link": "/click.php?id=471",
+    "card": "/chby-exchanger.html",
+    "real_link": "https://chby.io"
+  },
+  {
+    "name": "AtChange",
+    "link": "/click.php?id=578",
+    "card": "/atchange-exchanger.html",
+    "real_link": "https://atchange.net",
+    "xml": "https://atchange.net/request-exportxml.xml"
+  },
+  {
+    "name": "BitokAi",
+    "link": "/click.php?id=871",
+    "card": "/bitokai-exchanger.html",
+    "real_link": "https://bitok.ai"
+  },
+  {
+    "name": "KZ007",
+    "link": "/click.php?id=816",
+    "card": "/kz007-exchanger.html",
+    "real_link": "https://kz007.org",
+    "xml": "https://kz007.org/request-exportxml.xml"
+  },
+  {
+    "name": "Coin24",
+    "link": "/click.php?id=1014",
+    "card": "/coin24-exchanger.html",
+    "real_link": "https://coin24.io"
+  },
+  {
+    "name": "MasterChange",
+    "link": "/click.php?id=469",
+    "card": "/masterchange-exchanger.html",
+    "real_link": "https://master-change.io",
+    "xml": "https://master-change.io/export.xml"
+  },
+  {
+    "name": "CoinFusionOne",
+    "link": "/click.php?id=1205",
+    "card": "/coinfusion-exchanger.html",
+    "real_link": "https://coinfusion.one"
+  },
+  {
+    "name": "ChangeCoins",
+    "link": "/click.php?id=808",
+    "card": "/changecoins-exchanger.html",
+    "real_link": "https://changecoins.io"
+  },
+  {
+    "name": "Enter-Change",
+    "link": "/click.php?id=817",
+    "card": "/enter-change-exchanger.html",
+    "real_link": "https://enter-change.com",
+    "xml": "https://enter-change.com/API/GetCoursesWP"
+  },
+  {
+    "name": "BitExchanger",
+    "link": "/click.php?id=519",
+    "card": "/bitexchanger-exchanger.html",
+    "real_link": "https://bit-exchanger.me",
+    "xml": "https://bit-exchanger.me/export.xml"
+  },
+  {
+    "name": "PayMarket",
+    "link": "/click.php?id=785",
+    "card": "/paymarket-exchanger.html",
+    "real_link": "https://paymarket.cc",
+    "xml": "https://paymarket.cc/valuta.xml"
+  },
+  {
+    "name": "Sunduk",
+    "link": "/click.php?id=925",
+    "card": "/sunduk-exchanger.html",
+    "real_link": "https://sunduk.su"
+  },
+  {
+    "name": "Nadex",
+    "link": "/click.php?id=1186",
+    "card": "/nadex-exchanger.html",
+    "real_link": "https://nadex.io"
+  },
+  {
+    "name": "CryptoSwap365",
+    "link": "/click.php?id=1198",
+    "card": "/cryptoswap365-exchanger.html",
+    "real_link": "https://cryptoswap365.com",
+    "xml": "https://cryptoswap365.com/service/export/xml"
+  },
+  {
+    "name": "Strela",
+    "link": "/click.php?id=1275",
+    "card": "/strl-x-chng-exchanger.html",
+    "real_link": "https://strl-x-chng.com",
+    "xml": "https://strl-x-chng.com/request-exportxml.xml"
+  },
+  {
+    "name": "Crypto-Store",
+    "link": "/click.php?id=930",
+    "card": "/crypto-store-exchanger.html",
+    "real_link": "https://crypto-store.cc",
+    "xml": "https://crypto-store.cc/rates.xml"
+  },
+  {
+    "name": "DeltaChanger",
+    "link": "/click.php?id=1299",
+    "card": "/deltachanger-exchanger.html",
+    "real_link": "https://deltachanger.com"
+  },
+  {
+    "name": "Bixter",
+    "link": "/click.php?id=865",
+    "card": "/bixter-exchanger.html",
+    "real_link": "https://bixter.org"
+  },
+  {
+    "name": "LetsPay",
+    "link": "/click.php?id=999",
+    "card": "/letspay-exchanger.html",
+    "real_link": "https://letspay.me",
+    "xml": "https://letspay.me/courses.xml"
+  },
+  {
+    "name": "AjuBit",
+    "link": "/click.php?id=1090",
+    "card": "/ajubit-exchanger.html",
+    "real_link": "https://ajubit.com"
+  },
+  {
+    "name": "XbiTrade",
+    "link": "/click.php?id=776",
+    "card": "/xbitrade-exchanger.html",
+    "real_link": "https://online.xbitrade.com",
+    "xml": "https://online.xbitrade.com/request-exportxml.xml"
+  },
+  {
+    "name": "24Obmin",
+    "link": "/click.php?id=251",
+    "card": "/24obmin-exchanger.html",
+    "real_link": "https://24obmin.com",
+    "xml": "https://24obmin.com/request-exportxml.xml"
+  },
+  {
+    "name": "MasonEx",
+    "link": "/click.php?id=1377",
+    "card": "/mason-ex-exchanger.html",
+    "real_link": "https://mason-ex.com",
+    "xml": "https://mason-ex.com/service/export/xml"
+  },
+  {
+    "name": "SwapsCenter",
+    "link": "/click.php?id=1349",
+    "card": "/swapscenter-exchanger.html",
+    "real_link": "https://swapscenter.exchange"
+  },
+  {
+    "name": "AceXchanger",
+    "link": "/click.php?id=1164",
+    "card": "/acexchanger-exchanger.html",
+    "real_link": "https://acexchanger.com"
+  },
+  {
+    "name": "CryptoGin",
+    "link": "/click.php?id=1132",
+    "card": "/cryptogin-exchanger.html",
+    "real_link": "https://cryptogin.cc",
+    "xml": "https://cryptogin.cc/API/GetCoursesWP"
+  },
+  {
+    "name": "99Francs",
+    "link": "/click.php?id=672",
+    "card": "/99francs-exchanger.html",
+    "real_link": "https://99francs.pro",
+    "xml": "https://99francs.pro/request-exportxml.xml"
+  },
+  {
+    "name": "Coine-Market",
+    "link": "/click.php?id=1221",
+    "card": "/coine-market-exchanger.html",
+    "real_link": "https://coine-market.com",
+    "xml": "https://coine-market.com/request-exportxml.xml"
+  },
+  {
+    "name": "BestKurs24",
+    "link": "/click.php?id=974",
+    "card": "/bestkurs24-exchanger.html",
+    "real_link": "https://bestkurs24.com",
+    "xml": "https://bestkurs24.com/request-exportxml.xml"
+  },
+  {
+    "name": "JarvisExchange",
+    "link": "/click.php?id=1163",
+    "card": "/jarvisexchange-exchanger.html",
+    "real_link": "https://jarvisexchange.com"
+  },
+  {
+    "name": "More-Ex",
+    "link": "/click.php?id=1337",
+    "card": "/more-ex-exchanger.html",
+    "real_link": "https://more-ex.com",
+    "xml": "https://more-ex.com/request-exportxml.xml"
+  },
+  {
+    "name": "TradeToCash",
+    "link": "/click.php?id=1158",
+    "card": "/tradetocash-exchanger.html",
+    "real_link": "https://tradeto.cash",
+    "xml": "https://tradeto.cash/service/export/xml"
+  },
+  {
+    "name": "Kursov24",
+    "link": "/click.php?id=1050",
+    "card": "/kursov24-exchanger.html",
+    "real_link": "https://kursov24.org",
+    "xml": "https://kursov24.org/API/GetCoursesWP"
+  },
+  {
+    "name": "EasySwap",
+    "link": "/click.php?id=1225",
+    "card": "/easyswap-exchanger.html",
+    "real_link": "https://easyswap.info",
+    "xml": "https://easyswap.info/valuta.xml"
+  },
+  {
+    "name": "WikiPays",
+    "link": "/click.php?id=687",
+    "card": "/wikipays-exchanger.html",
+    "real_link": "https://wikipays.com",
+    "xml": "https://wikipays.com/request-exportxml.xml"
+  },
+  {
+    "name": "WeDoExchange",
+    "link": "/click.php?id=1203",
+    "card": "/wedoexchange-exchanger.html",
+    "real_link": "https://wedo.exchange",
+    "xml": "https://wedo.exchange/service/export/xml"
+  },
+  {
+    "name": "Banka",
+    "link": "/click.php?id=1178",
+    "card": "/bankaexchange-exchanger.html",
+    "real_link": "https://banka.exchange"
+  },
+  {
+    "name": "CashFlow",
+    "link": "/click.php?id=1176",
+    "card": "/cashflow-exchanger.html",
+    "real_link": "https://cashflow.best",
+    "xml": "https://cashflow.best/service/export/xml"
+  },
+  {
+    "name": "ObmenOne",
+    "link": "/click.php?id=1227",
+    "card": "/obmenone-exchanger.html",
+    "real_link": "https://obmen.one",
+    "xml": "https://obmen.one/service/export/xml"
+  },
+  {
+    "name": "Kupitman",
+    "link": "/click.php?id=1282",
+    "card": "/kupitman-exchanger.html",
+    "real_link": "https://kupitman.pro"
+  },
+  {
+    "name": "CoinChanger",
+    "link": "/click.php?id=896",
+    "card": "/coinchanger-exchanger.html",
+    "real_link": "https://coinchanger.in"
+  },
+  {
+    "name": "Tuco",
+    "link": "/click.php?id=985",
+    "card": "/tuco-exchanger.html",
+    "real_link": "https://tuco.co"
+  },
+  {
+    "name": "Arbuz",
+    "link": "/click.php?id=1131",
+    "card": "/arbuz-exchanger.html",
+    "real_link": "https://arbuz.io"
+  },
+  {
+    "name": "24Zone",
+    "link": "/click.php?id=958",
+    "card": "/24zone-exchanger.html",
+    "real_link": "https://24.zone",
+    "xml": "https://24.zone/request-exportxml.xml"
+  },
+  {
+    "name": "X-Obmen",
+    "link": "/click.php?id=1065",
+    "card": "/x-obmen-exchanger.html",
+    "real_link": "https://best.x-obmen.org/en/?rid=100"
+  },
+  {
+    "name": "SendNow",
+    "link": "/click.php?id=1191",
+    "card": "/sendnow-exchanger.html",
+    "real_link": "https://sendnow.money"
+  },
+  {
+    "name": "MoneyMate",
+    "link": "/click.php?id=1234",
+    "card": "/moneymate-exchanger.html",
+    "real_link": "https://moneymate.best",
+    "xml": "https://moneymate.best/update.xml"
+  },
+  {
+    "name": "C1kWorld",
+    "link": "/click.php?id=692",
+    "card": "/c1kworld-exchanger.html",
+    "real_link": "https://c1k.world"
+  },
+  {
+    "name": "Quantex",
+    "link": "/click.php?id=913",
+    "card": "/quantex-exchanger.html",
+    "real_link": "https://quantex.pro"
+  },
+  {
+    "name": "GeeExchange",
+    "link": "/click.php?id=608",
+    "card": "/geeexchange-exchanger.html",
+    "real_link": "https://geeexchange.com",
+    "xml": "https://geeexchange.com/request-exportxml.xml"
+  },
+  {
+    "name": "Cerber",
+    "link": "/click.php?id=1209",
+    "card": "/cerber-exchanger.html",
+    "real_link": "https://1.cerber.pro",
+    "xml": "https://1.cerber.pro/request-exportxml.xml"
+  },
+  {
+    "name": "Crystal-Trade",
+    "link": "/click.php?id=1162",
+    "card": "/crystal-trade-exchanger.html",
+    "real_link": "https://crystal-trade.org",
+    "xml": "https://crystal-trade.org/request-exportxml.xml"
+  },
+  {
+    "name": "CoolCoin",
+    "link": "/click.php?id=1100",
+    "card": "/coolcoin-exchanger.html",
+    "real_link": "https://coolcoin.best",
+    "xml": "https://coolcoin.best/request-exportxml.xml"
+  },
+  {
+    "name": "Cryptohub",
+    "link": "/click.php?id=1211",
+    "card": "/cryptohub-exchanger.html",
+    "real_link": "https://cryptohub.llc"
+  },
+  {
+    "name": "Crypcie",
+    "link": "/click.php?id=1183",
+    "card": "/crypcie-exchanger.html",
+    "real_link": "https://crypcie.com",
+    "xml": "https://crypcie.com/request-exportxml.xml"
+  },
+  {
+    "name": "BitCash",
+    "link": "/click.php?id=685",
+    "card": "/bitcash-exchanger.html",
+    "real_link": "https://bitcash.cc",
+    "xml": "https://bitcash.cc/request-exportxml.xml"
+  },
+  {
+    "name": "Expa24",
+    "link": "/click.php?id=1185",
+    "card": "/expa24-exchanger.html",
+    "real_link": "https://expa24.com"
+  },
+  {
+    "name": "IChangeOne",
+    "link": "/click.php?id=1011",
+    "card": "/ichangeone-exchanger.html",
+    "real_link": "https://ichange.one",
+    "xml": "https://ichange.one/request-exportxml.xml"
+  },
+  {
+    "name": "Sellver",
+    "link": "/click.php?id=1206",
+    "card": "/sellver-exchanger.html",
+    "real_link": "https://sellver.com",
+    "xml": "https://sellver.com/request-exportxml.xml"
+  },
+  {
+    "name": "Platov",
+    "link": "/click.php?id=718",
+    "card": "/platov-exchanger.html",
+    "real_link": "https://platov.co"
+  },
+  {
+    "name": "Exdex",
+    "link": "/click.php?id=1370",
+    "card": "/exdex-exchanger.html",
+    "real_link": "https://exdex.ae",
+    "xml": "https://exdex.ae/request-exportxml.xml"
+  },
+  {
+    "name": "Staff-Obmen",
+    "link": "/click.php?id=635",
+    "card": "/staff-obmen-exchanger.html",
+    "real_link": "https://staffobmen.com",
+    "xml": "https://staffobmen.com/request-exportxml.xml"
+  },
+  {
+    "name": "UniCash",
+    "link": "/click.php?id=766",
+    "card": "/unicash-exchanger.html",
+    "real_link": "https://unicash.pro",
+    "xml": "https://unicash.pro/request-exportxml.xml"
+  },
+  {
+    "name": "1Million",
+    "link": "/click.php?id=1066",
+    "card": "/1million-exchanger.html",
+    "real_link": "https://1million.exchange"
+  },
+  {
+    "name": "Cryptofiat",
+    "link": "/click.php?id=1214",
+    "card": "/cryptofiat-exchanger.html",
+    "real_link": "https://cryptofiat.finance",
+    "xml": "https://cryptofiat.finance/request-exportxml.xml"
+  },
+  {
+    "name": "AltinBit",
+    "link": "/click.php?id=1195",
+    "card": "/altinbit-exchanger.html",
+    "real_link": "https://altinbit.com",
+    "xml": "https://altinbit.com/request-exportxml.xml"
+  },
+  {
+    "name": "ExWhite",
+    "link": "/click.php?id=1120",
+    "card": "/exwhite-exchanger.html",
+    "real_link": "https://exwhite.io"
+  },
+  {
+    "name": "Itez",
+    "link": "/click.php?id=987",
+    "card": "/itez-exchanger.html",
+    "real_link": "https://buy.itez.com"
+  },
+  {
+    "name": "BulldogExchange",
+    "link": "/click.php?id=1264",
+    "card": "/bulldogexchange-exchanger.html",
+    "real_link": "https://bulldog.exchange",
+    "xml": "https://bulldog.exchange/service/export/xml"
+  },
+  {
+    "name": "LetsExchange",
+    "link": "/click.php?id=1121",
+    "card": "/letsexchange-exchanger.html",
+    "real_link": "https://letsexchange.io"
+  },
+  {
+    "name": "Keine-Exchange",
+    "link": "/click.php?id=850",
+    "card": "/keine-exchange-exchanger.html",
+    "real_link": "https://keine-exchange.com",
+    "xml": "https://keine-exchange.com/request-exportxml.xml"
+  },
+  {
+    "name": "FlyMoney",
+    "link": "/click.php?id=788",
+    "card": "/flymoney-exchanger.html",
+    "real_link": "https://flymoney.biz",
+    "xml": "https://flymoney.biz/request-exportxml.xml"
+  },
+  {
+    "name": "ExCenter",
+    "link": "/click.php?id=1002",
+    "card": "/excenter-exchanger.html",
+    "real_link": "https://ex.center",
+    "xml": "https://ex.center/request-exportxml.xml"
+  },
+  {
+    "name": "Finex24",
+    "link": "/click.php?id=1055",
+    "card": "/finex24-exchanger.html",
+    "real_link": "https://finex24.io",
+    "xml": "https://finex24.io/request-exportxml.xml"
+  },
+  {
+    "name": "CoinPayMaster",
+    "link": "/click.php?id=772",
+    "card": "/coinpaymaster-exchanger.html",
+    "real_link": "https://coinpaymaster.com",
+    "xml": "https://coinpaymaster.com/API/GetCoursesWP"
+  },
+  {
+    "name": "WayBit",
+    "link": "/click.php?id=1215",
+    "card": "/waybit-exchanger.html",
+    "real_link": "https://waybit.pl",
+    "xml": "https://waybit.pl/service/export/xml"
+  },
+  {
+    "name": "365Exchanger",
+    "link": "/click.php?id=771",
+    "card": "/365exchanger-exchanger.html",
+    "real_link": "https://365exchanger.com",
+    "xml": "https://365exchanger.com/rates.xml"
+  },
+  {
+    "name": "Money-Change",
+    "link": "/click.php?id=227",
+    "card": "/money-change-exchanger.html",
+    "real_link": "https://money-change.biz"
+  },
+  {
+    "name": "Ob-men",
+    "link": "/click.php?id=877",
+    "card": "/ob-men-exchanger.html",
+    "real_link": "https://ob-men.com"
+  },
+  {
+    "name": "GrumBot",
+    "link": "/click.php?id=1101",
+    "card": "/grumbot-exchanger.html",
+    "real_link": "https://grumbot.net"
+  },
+  {
+    "name": "Menyala",
+    "link": "/click.php?id=1236",
+    "card": "/menyala-exchanger.html",
+    "real_link": "https://menyala.info",
+    "xml": "https://menyala.info/service/export/xml"
+  },
+  {
+    "name": "BetaTransfer",
+    "link": "/click.php?id=561",
+    "card": "/betatransfer-exchanger.html",
+    "real_link": "https://betatransfer.org",
+    "xml": "https://betatransfer.org/request-exportxml.xml"
+  },
+  {
+    "name": "CashBox",
+    "link": "/click.php?id=1098",
+    "card": "/cashbox-exchanger.html",
+    "real_link": "https://cashbox.exchange",
+    "xml": "https://cashbox.exchange/request-exportxml.xml"
+  },
+  {
+    "name": "Mario",
+    "link": "/click.php?id=1314",
+    "card": "/mario-exchanger.html",
+    "real_link": "https://mario.zone",
+    "xml": "https://mario.zone/request-exportxml.xml"
+  },
+  {
+    "name": "Paspar",
+    "link": "/click.php?id=269",
+    "card": "/paspar-exchanger.html",
+    "real_link": "https://paspar.net"
+  },
+  {
+    "name": "Vilcov",
+    "link": "/click.php?id=152",
+    "card": "/vilcov-exchanger.html",
+    "real_link": "https://vilcov.com"
+  },
+  {
+    "name": "ObmenAT24",
+    "link": "/click.php?id=907",
+    "card": "/obmenat24-exchanger.html",
+    "real_link": "https://obmenat24.com"
+  },
+  {
+    "name": "Mitninskii",
+    "link": "/click.php?id=1180",
+    "card": "/mitninskii-exchanger.html",
+    "real_link": "https://mitninskii.online",
+    "xml": "https://mitninskii.online/request-exportxml.xml"
+  },
+  {
+    "name": "eBTCpro",
+    "link": "/click.php?id=1187",
+    "card": "/ebtcpro-exchanger.html",
+    "real_link": "https://ebtc.pro"
+  },
+  {
+    "name": "Tsunami",
+    "link": "/click.php?id=1277",
+    "card": "/tsunami-exchanger.html",
+    "real_link": "https://tsunami.cash",
+    "xml": "https://tsunami.cash/service/export/xml"
+  },
+  {
+    "name": "ExBit",
+    "link": "/click.php?id=1116",
+    "card": "/exbit-exchanger.html",
+    "real_link": "https://exbit.cc"
+  },
+  {
+    "name": "BTCSale",
+    "link": "/click.php?id=1028",
+    "card": "/btcsale-exchanger.html",
+    "real_link": "https://1.btcsale.pro",
+    "xml": "https://1.btcsale.pro/request-exportxml.xml"
+  },
+  {
+    "name": "CryptoBarMen",
+    "link": "/click.php?id=895",
+    "card": "/cryptobarmen-exchanger.html",
+    "real_link": "https://cryptobar.men",
+    "xml": "https://cryptobar.men/request-exportxml.xml"
+  },
+  {
+    "name": "Payex24",
+    "link": "/click.php?id=1378",
+    "card": "/payex24-exchanger.html",
+    "real_link": "https://payex24.com",
+    "xml": "https://payex24.com/service/export/xml"
+  },
+  {
+    "name": "Obmennik-UZ",
+    "link": "/click.php?id=736",
+    "card": "/obmennik-uz-exchanger.html",
+    "real_link": "https://1obmennik-uz.ru",
+    "xml": "https://1obmennik-uz.ru/request-exportxml.xml"
+  },
+  {
+    "name": "BtcBit",
+    "link": "/click.php?id=645",
+    "card": "/btcbit-exchanger.html",
+    "real_link": "https://btcbit.net"
+  },
+  {
+    "name": "CryptoObmen",
+    "link": "/click.php?id=967",
+    "card": "/cryptoobmen-exchanger.html",
+    "real_link": "https://cryptoobmen.io"
+  },
+  {
+    "name": "WMStream",
+    "link": "/click.php?id=341",
+    "card": "/wmstream-exchanger.html",
+    "real_link": "https://wmstream.pro",
+    "xml": "https://wmstream.pro/request-exportxml.xml"
+  },
+  {
+    "name": "WTC-Ex",
+    "link": "/click.php?id=1278",
+    "card": "/wtc-ex-exchanger.html",
+    "real_link": "https://wtc-ex.com"
+  },
+  {
+    "name": "50Cents",
+    "link": "/click.php?id=538",
+    "card": "/50cents-exchanger.html",
+    "real_link": "https://50cents.pro",
+    "xml": "https://50cents.pro/request-exportxml.xml"
+  },
+  {
+    "name": "EasyBusy",
+    "link": "/click.php?id=1348",
+    "card": "/easybusy-exchanger.html",
+    "real_link": "https://easybusy.bz",
+    "xml": "https://easybusy.bz/export/xml"
+  },
+  {
+    "name": "BTC-Obmennik",
+    "link": "/click.php?id=695",
+    "card": "/btc-obmennik-exchanger.html",
+    "real_link": "https://btc-obmennik.org",
+    "xml": "https://btc-obmennik.org/request-exportxml.xml"
+  },
+  {
+    "name": "N-Obmen",
+    "link": "/click.php?id=364",
+    "card": "/n-obmen-exchanger.html",
+    "real_link": "https://n-obmen.net",
+    "xml": "https://n-obmen.net/rates.xml"
+  },
+  {
+    "name": "Coinumm",
+    "link": "/click.php?id=1010",
+    "card": "/coinumm-exchanger.html",
+    "real_link": "https://coinumm.com"
+  },
+  {
+    "name": "1tab",
+    "link": "/click.php?id=1350",
+    "card": "/1tab-exchanger.html",
+    "real_link": "https://1tab.co",
+    "xml": "https://1tab.co/service/export/xml"
+  },
+  {
+    "name": "MoneyRoll",
+    "link": "/click.php?id=1262",
+    "card": "/moneyroll-exchanger.html",
+    "real_link": "https://moneyroll.pro",
+    "xml": "https://moneyroll.pro/service/export/xml"
+  },
+  {
+    "name": "ObmenLite24",
+    "link": "/click.php?id=719",
+    "card": "/obmenlite24-exchanger.html",
+    "real_link": "https://obmenlite24.ru",
+    "xml": "https://obmenlite24.ru/request-exportxml.xml"
+  },
+  {
+    "name": "Pkr2Dollar",
+    "link": "/click.php?id=1315",
+    "card": "/pkr2dollar-exchanger.html",
+    "real_link": "https://global.pkr2dollar.com",
+    "xml": "https://global.pkr2dollar.com/request-exportxml.xml"
+  },
+  {
+    "name": "ObmenAT",
+    "link": "/click.php?id=381",
+    "card": "/obmenat-exchanger.html",
+    "real_link": "https://obmenat.co"
+  },
+  {
+    "name": "Rapid-Obmen",
+    "link": "/click.php?id=268",
+    "card": "/rapid-obmen-exchanger.html",
+    "real_link": "https://rapid-obmen.com",
+    "xml": "https://rapid-obmen.com/request-exportxml.xml"
+  },
+  {
+    "name": "Aztec-Gold",
+    "link": "/click.php?id=1243",
+    "card": "/aztec-gold-exchanger.html",
+    "real_link": "https://aztec-gold.net"
+  },
+  {
+    "name": "O-Paxum",
+    "link": "/click.php?id=490",
+    "card": "/o-paxum-exchanger.html",
+    "real_link": "https://o-paxum.net",
+    "xml": "https://o-paxum.net/request-exportxml.xml"
+  },
+  {
+    "name": "ExchangeMafia",
+    "link": "/click.php?id=1338",
+    "card": "/exchangemafia-exchanger.html",
+    "real_link": "https://exchangemafia.com",
+    "xml": "https://exchangemafia.com/request-exportxml.xml"
+  },
+  {
+    "name": "KingsExchange",
+    "link": "/click.php?id=1357",
+    "card": "/kingsexchange-exchanger.html",
+    "real_link": "https://kingsexchange.global"
+  },
+  {
+    "name": "ObminMe",
+    "link": "/click.php?id=1366",
+    "card": "/obmin-exchanger.html",
+    "real_link": "https://obmin.me",
+    "xml": "https://obmin.me/service/export/xml"
+  },
+  {
+    "name": "Coin-Bank",
+    "link": "/click.php?id=567",
+    "card": "/coin-bank-exchanger.html",
+    "real_link": "https://coin-bank.co",
+    "xml": "https://coin-bank.co/request-exportxml.xml"
+  },
+  {
+    "name": "Obmen24",
+    "link": "/click.php?id=530",
+    "card": "/obmen24com-exchanger.html",
+    "real_link": "https://xn--24-9kcq8ahd.com",
+    "xml": "https://xn--24-9kcq8ahd.com/request-exportxml.xml"
+  },
+  {
+    "name": "CoinBox",
+    "link": "/click.php?id=1042",
+    "card": "/coinbox-exchanger.html",
+    "real_link": "https://coinbox.pw",
+    "xml": "https://coinbox.pw/request-exportxml.xml"
+  },
+  {
+    "name": "MyInvestStory",
+    "link": "/click.php?id=839",
+    "card": "/myinveststory-exchanger.html",
+    "real_link": "https://myinveststory.com",
+    "xml": "https://myinveststory.com/exportxml.xml"
+  },
+  {
+    "name": "BigBank",
+    "link": "/click.php?id=731",
+    "card": "/bigbank-exchanger.html",
+    "real_link": "https://bigbank.top",
+    "xml": "https://bigbank.top/request-exportxml.xml"
+  },
+  {
+    "name": "PayStore",
+    "link": "/click.php?id=1238",
+    "card": "/paystore-exchanger.html",
+    "real_link": "https://paystore.pro",
+    "xml": "https://paystore.pro/service/export/xml"
+  },
+  {
+    "name": "Ex-Bank",
+    "link": "/click.php?id=812",
+    "card": "/ex-bank-exchanger.html",
+    "real_link": "https://ex-bank.cc",
+    "xml": "https://ex-bank.cc/assets/rates.xml"
+  },
+  {
+    "name": "InstantExchangers",
+    "link": "/click.php?id=1134",
+    "card": "/instantexchangers-exchanger.html",
+    "real_link": "https://instantexchangers.com"
+  },
+  {
+    "name": "Tasty-Changer",
+    "link": "/click.php?id=1320",
+    "card": "/tasty-changer-exchanger.html",
+    "real_link": "https://tasty-changer.com"
+  },
+  {
+    "name": "N-Change",
+    "link": "/click.php?id=29",
+    "card": "/n-change-exchanger.html",
+    "real_link": "https://n-change.net",
+    "xml": "https://n-change.net/courses.xml"
+  },
+  {
+    "name": "24ExPay",
+    "link": "/click.php?id=752",
+    "card": "/24expay-exchanger.html",
+    "real_link": "https://24expay.com"
+  },
+  {
+    "name": "BitKit",
+    "link": "/click.php?id=1322",
+    "card": "/bitkit-exchanger.html",
+    "real_link": "https://bitkit.money"
+  },
+  {
+    "name": "ChangerClub",
+    "link": "/click.php?id=611",
+    "card": "/changerclub-exchanger.html",
+    "real_link": "https://changer.club"
+  },
+  {
+    "name": "BTC-Volga",
+    "link": "/click.php?id=902",
+    "card": "/btc-volga-exchanger.html",
+    "real_link": "https://btc-volga.com",
+    "xml": "https://btc-volga.com/request-exportxml.xml"
+  },
+  {
+    "name": "GramBit",
+    "link": "/click.php?id=888",
+    "card": "/grambit-exchanger.html",
+    "real_link": "https://grambit.biz",
+    "xml": "https://grambit.biz/request-exportxml.xml"
+  },
+  {
+    "name": "FreeChange",
+    "link": "/click.php?id=1174",
+    "card": "/freechange-exchanger.html",
+    "real_link": "https://freechange.cc"
+  },
+  {
+    "name": "BTCDeal",
+    "link": "/click.php?id=1254",
+    "card": "/btcdeal-exchanger.html",
+    "real_link": "https://btcdeal.ru"
+  },
+  {
+    "name": "CryptoLavka",
+    "link": "/click.php?id=1245",
+    "card": "/cryptolavka-exchanger.html",
+    "real_link": "https://cryptolavka.com",
+    "xml": "https://cryptolavka.com/request-exportxml.xml"
+  },
+  {
+    "name": "UmaPay",
+    "link": "/click.php?id=1380",
+    "card": "/umapay-exchanger.html",
+    "real_link": "https://umapay.online",
+    "xml": "https://umapay.online/request-exportxml.xml"
+  },
+  {
+    "name": "DoubleSwap",
+    "link": "/click.php?id=1199",
+    "card": "/doubleswap-exchanger.html",
+    "real_link": "https://doubleswap.ru",
+    "xml": "https://doubleswap.ru/request-exportxml.xml"
+  },
+  {
+    "name": "7Pay",
+    "link": "/click.php?id=835",
+    "card": "/7pay-exchanger.html",
+    "real_link": "https://7pay.me",
+    "xml": "https://7pay.me/bestchange.xml"
+  },
+  {
+    "name": "BitcoinVN",
+    "link": "/click.php?id=1273",
+    "card": "/bitcoinvn-exchanger.html",
+    "real_link": "https://bitcoinvn.io"
+  },
+  {
+    "name": "Exch-em",
+    "link": "/click.php?id=386",
+    "card": "/exch-em-exchanger.html",
+    "real_link": "https://exch-em.com",
+    "xml": "https://exch-em.com/request-exportxml.xml"
+  },
+  {
+    "name": "AllMoney",
+    "link": "/click.php?id=842",
+    "card": "/allmoney-exchanger.html",
+    "real_link": "https://allmoney.market",
+    "xml": "https://allmoney.market/request-exportxml.xml"
+  },
+  {
+    "name": "818Finance",
+    "link": "/click.php?id=1239",
+    "card": "/818finance-exchanger.html",
+    "real_link": "https://818.finance",
+    "xml": "https://818.finance/service/export/xml"
+  },
+  {
+    "name": "SpbWMCasher",
+    "link": "/click.php?id=447",
+    "card": "/spbwmcasher-exchanger.html",
+    "real_link": "https://spbwmcasher.ru"
+  },
+  {
+    "name": "Cash2Pay",
+    "link": "/click.php?id=1092",
+    "card": "/cash2pay-exchanger.html",
+    "real_link": "https://cash2pay.pro",
+    "xml": "https://cash2pay.pro/service/export/xml"
+  },
+  {
+    "name": "SF-Changer",
+    "link": "/click.php?id=1258",
+    "card": "/sfchanger-exchanger.html",
+    "real_link": "https://sfchanger.com"
+  },
+  {
+    "name": "UkrExchange",
+    "link": "/click.php?id=1150",
+    "card": "/ukrexchange-exchanger.html",
+    "real_link": "https://ukr.exchange"
+  },
+  {
+    "name": "BestObmen",
+    "link": "/click.php?id=604",
+    "card": "/bestobmen-exchanger.html",
+    "real_link": "https://bestobmen.su",
+    "xml": "https://bestobmen.su/request-exportxml.xml"
+  },
+  {
+    "name": "Tochka24",
+    "link": "/click.php?id=1316",
+    "card": "/tochka24-exchanger.html",
+    "real_link": "https://tochka24.top",
+    "xml": "https://tochka24.top/request-exportxml.xml"
+  },
+  {
+    "name": "Sharky",
+    "link": "/click.php?id=1303",
+    "card": "/sharky-exchanger.html",
+    "real_link": "https://sharky.one",
+    "xml": "https://sharky.one/export/xml"
+  },
+  {
+    "name": "Galaxy-Coin",
+    "link": "/click.php?id=1230",
+    "card": "/galaxy-coin-exchanger.html",
+    "real_link": "https://galaxy-coin.cash"
+  },
+  {
+    "name": "X-Capital",
+    "link": "/click.php?id=1184",
+    "card": "/x-capital-exchanger.html",
+    "real_link": "https://x-capital.expert",
+    "xml": "https://x-capital.expert/request-exportxml.xml"
+  },
+  {
+    "name": "ExObmin",
+    "link": "/click.php?id=1353",
+    "card": "/exobmin-exchanger.html",
+    "real_link": "https://exobmin.io",
+    "xml": "https://exobmin.io/service/export/xml"
+  },
+  {
+    "name": "Rubin",
+    "link": "/click.php?id=1361",
+    "card": "/rubin-exchanger.html",
+    "real_link": "https://rubin.exchange"
+  },
+  {
+    "name": "Bitcoin-Armenia",
+    "link": "/click.php?id=1126",
+    "card": "/bitcoin-armenia-exchanger.html",
+    "real_link": "https://bitcoin-armenia.com"
+  },
+  {
+    "name": "24Online",
+    "link": "/click.php?id=445",
+    "card": "/24online-exchanger.html",
+    "real_link": "https://24online.su",
+    "xml": "https://24online.su/request-exportxml.xml"
+  },
+  {
+    "name": "BTC24pro",
+    "link": "/click.php?id=770",
+    "card": "/btc24pro-exchanger.html",
+    "real_link": "https://btc24.pro",
+    "xml": "https://btc24.pro/rates/rates.xml"
+  },
+  {
+    "name": "GreenBit",
+    "link": "/click.php?id=1224",
+    "card": "/greenbit-exchanger.html",
+    "real_link": "https://greenbit.pro",
+    "xml": "https://greenbit.pro/request-exportxml.xml"
+  },
+  {
+    "name": "Dubai-Tether",
+    "link": "/click.php?id=1287",
+    "card": "/dubai-tether-exchanger.html",
+    "real_link": "https://dubai-tether.pro"
+  },
+  {
+    "name": "GoodBoySwap",
+    "link": "/click.php?id=1288",
+    "card": "/goodboyswap-exchanger.html",
+    "real_link": "https://goodboyswap.com",
+    "xml": "https://goodboyswap.com/request-exportxml.xml"
+  },
+  {
+    "name": "CosmoChanger",
+    "link": "/click.php?id=1033",
+    "card": "/cosmochanger-exchanger.html",
+    "real_link": "https://cosmochanger.cc",
+    "xml": "https://cosmochanger.cc/API/GetCoursesWP"
+  },
+  {
+    "name": "BitFlaming",
+    "link": "/click.php?id=1301",
+    "card": "/bitflaming-exchanger.html",
+    "real_link": "https://bitflaming.com",
+    "xml": "https://bitflaming.com/API/GetCoursesWP"
+  },
+  {
+    "name": "InsideExchange",
+    "link": "/click.php?id=1334",
+    "card": "/inside-exchange-exchanger.html",
+    "real_link": "https://inside-exchange.com",
+    "xml": "https://inside-exchange.com/request-exportxml.xml"
+  },
+  {
+    "name": "LuckyChange",
+    "link": "/click.php?id=1376",
+    "card": "/luckychange-exchanger.html",
+    "real_link": "https://luckychange.net"
+  },
+  {
+    "name": "Ru-Change",
+    "link": "/click.php?id=437",
+    "card": "/ru-change-exchanger.html",
+    "real_link": "https://ru-change.cc",
+    "xml": "https://ru-change.cc/request-exportxml.xml"
+  },
+  {
+    "name": "SecureShift",
+    "link": "/click.php?id=1318",
+    "card": "/secureshift-exchanger.html",
+    "real_link": "https://secureshift.io"
+  },
+  {
+    "name": "PoneyMoney",
+    "link": "/click.php?id=715",
+    "card": "/poneymoney-exchanger.html",
+    "real_link": "https://poneymoney.com",
+    "xml": "https://poneymoney.com/public/rates.xml"
+  },
+  {
+    "name": "MoneyMix",
+    "link": "/click.php?id=779",
+    "card": "/moneymix-exchanger.html",
+    "real_link": "https://moneymix.org",
+    "xml": "https://moneymix.org/request-exportxml.xml"
+  },
+  {
+    "name": "Cryptologic",
+    "link": "/click.php?id=1207",
+    "card": "/cryptologic-exchanger.html",
+    "real_link": "https://cryptologic.online"
+  },
+  {
+    "name": "WswOne",
+    "link": "/click.php?id=1298",
+    "card": "/wsw-exchanger.html",
+    "real_link": "https://wsw.one"
+  },
+  {
+    "name": "BitFm",
+    "link": "/click.php?id=1302",
+    "card": "/bitfm-exchanger.html",
+    "real_link": "https://bitfm.io",
+    "xml": "https://bitfm.io/request-exportxml.xml"
+  },
+  {
+    "name": "BucksBunny",
+    "link": "/click.php?id=1219",
+    "card": "/bucksbunny-exchanger.html",
+    "real_link": "https://bucksbunny.me",
+    "xml": "https://bucksbunny.me/export/xml"
+  },
+  {
+    "name": "MarketCoin",
+    "link": "/click.php?id=641",
+    "card": "/marketcoin-exchanger.html",
+    "real_link": "https://marketcoin.io",
+    "xml": "https://marketcoin.io/request-exportxml.xml"
+  },
+  {
+    "name": "Convertex24",
+    "link": "/click.php?id=1179",
+    "card": "/convertex24-exchanger.html",
+    "real_link": "https://convertex24.io"
+  },
+  {
+    "name": "Intercontinental",
+    "link": "/click.php?id=1188",
+    "card": "/intercontinental-exchanger.html",
+    "real_link": "https://intercontinental.trade"
+  },
+  {
+    "name": "Monetkins",
+    "link": "/click.php?id=1070",
+    "card": "/monetkins-exchanger.html",
+    "real_link": "https://monetkins.com",
+    "xml": "https://monetkins.com/request-exportxml.xml"
+  },
+  {
+    "name": "InstaCrypt",
+    "link": "/click.php?id=1159",
+    "card": "/instacrypt-exchanger.html",
+    "real_link": "https://instacrypt.org",
+    "xml": "https://instacrypt.org/request-exportxml.xml"
+  },
+  {
+    "name": "Money-Office",
+    "link": "/click.php?id=1047",
+    "card": "/money-office-exchanger.html",
+    "real_link": "https://money-office.com",
+    "xml": "https://money-office.com/request-exportxml.xml"
+  },
+  {
+    "name": "ChangerBiz",
+    "link": "/click.php?id=125",
+    "card": "/changerbiz-exchanger.html",
+    "real_link": "https://changer.biz",
+    "xml": "https://changer.biz/bestchange.xml"
+  },
+  {
+    "name": "CityBit",
+    "link": "/click.php?id=977",
+    "card": "/citybit-exchanger.html",
+    "real_link": "https://citybit.pro",
+    "xml": "https://citybit.pro/valuta.xml"
+  },
+  {
+    "name": "Swapter",
+    "link": "/click.php?id=1291",
+    "card": "/swapter-exchanger.html",
+    "real_link": "https://swapter.io"
+  },
+  {
+    "name": "BarskiyDvorObmen",
+    "link": "/click.php?id=1373",
+    "card": "/barskiydvorobmen-exchanger.html",
+    "real_link": "https://barskiydvorobmen.com",
+    "xml": "https://barskiydvorobmen.com/service/export/xml"
+  },
+  {
+    "name": "BroGuru",
+    "link": "/click.php?id=1173",
+    "card": "/broguru-exchanger.html",
+    "real_link": "https://bro.guru",
+    "xml": "https://bro.guru/export/xml"
+  },
+  {
+    "name": "JohnnyDo",
+    "link": "/click.php?id=1257",
+    "card": "/johnnydo-exchanger.html",
+    "real_link": "https://johnny.do",
+    "xml": "https://johnny.do/export/xml"
+  },
+  {
+    "name": "Bitcoin24SU",
+    "link": "/click.php?id=638",
+    "card": "/bitcoin24su-exchanger.html",
+    "real_link": "https://bitcoin24.su",
+    "xml": "https://bitcoin24.su/request-exportxml.xml"
+  },
+  {
+    "name": "ExWell",
+    "link": "/click.php?id=1339",
+    "card": "/exwell-exchanger.html",
+    "real_link": "https://exwell.io"
+  },
+  {
+    "name": "IconFinance",
+    "link": "/click.php?id=1336",
+    "card": "/iconfinance-exchanger.html",
+    "real_link": "https://icon.finance",
+    "xml": "https://icon.finance/service/export/xml"
+  },
+  {
+    "name": "Crypto-Polis",
+    "link": "/click.php?id=1113",
+    "card": "/crypto-polis-exchanger.html",
+    "real_link": "https://crypto-polis.org"
+  },
+  {
+    "name": "AuraLegal",
+    "link": "/click.php?id=1295",
+    "card": "/auralegal-exchanger.html",
+    "real_link": "https://aura.legal",
+    "xml": "https://aura.legal/service/export/xml"
+  },
+  {
+    "name": "Sapfirex",
+    "link": "/click.php?id=1372",
+    "card": "/sapfirex-exchanger.html",
+    "real_link": "https://sapfirex.com",
+    "xml": "https://sapfirex.com/valuta.xml"
+  },
+  {
+    "name": "R2Exchange",
+    "link": "/click.php?id=1217",
+    "card": "/r2exchange-exchanger.html",
+    "real_link": "https://r2.exchange"
+  },
+  {
+    "name": "XStable",
+    "link": "/click.php?id=1374",
+    "card": "/xstable-exchanger.html",
+    "real_link": "https://xstable.pro",
+    "xml": "https://xstable.pro/service/export/xml"
+  },
+  {
+    "name": "Ru-Bas",
+    "link": "/click.php?id=654",
+    "card": "/ru-bas-exchanger.html",
+    "real_link": "https://ru-bas.ru",
+    "xml": "https://ru-bas.ru/service/export/xml"
+  },
+  {
+    "name": "CryptoBar",
+    "link": "/click.php?id=807",
+    "card": "/cryptobar-exchanger.html",
+    "real_link": "https://cryptobar.cc",
+    "xml": "https://cryptobar.cc/request-exportxml.xml"
+  },
+  {
+    "name": "Bankir",
+    "link": "/click.php?id=1016",
+    "card": "/bankir-exchanger.html",
+    "real_link": "https://bankir.io"
+  },
+  {
+    "name": "LigaBTC",
+    "link": "/click.php?id=1105",
+    "card": "/ligabtc-exchanger.html",
+    "real_link": "https://ligabtc.com"
+  },
+  {
+    "name": "SmartMoney",
+    "link": "/click.php?id=1108",
+    "card": "/smartmoney-exchanger.html",
+    "real_link": "https://smartmoney.exchange",
+    "xml": "https://smartmoney.exchange/request-exportxml.xml"
+  },
+  {
+    "name": "Crypt-On",
+    "link": "/click.php?id=1249",
+    "card": "/crypt-on-exchanger.html",
+    "real_link": "https://crypt-ons.com",
+    "xml": "https://crypt-ons.com/request-exportxml.xml"
+  },
+  {
+    "name": "BuyCrypt",
+    "link": "/click.php?id=1270",
+    "card": "/buycrypt-exchanger.html",
+    "real_link": "https://buycrypt.exchange"
+  },
+  {
+    "name": "Money-Pay",
+    "link": "/click.php?id=1342",
+    "card": "/money-pay-exchanger.html",
+    "real_link": "https://money-pay.org"
+  },
+  {
+    "name": "Swopperio",
+    "link": "/click.php?id=1343",
+    "card": "/swopper-exchanger.html",
+    "real_link": "https://swopper.io",
+    "xml": "https://swopper.io/service/export/xml"
+  },
+  {
+    "name": "ProtonPlus",
+    "link": "/click.php?id=1368",
+    "card": "/protonplus-exchanger.html",
+    "real_link": "https://protonplus.co",
+    "xml": "https://protonplus.co/export/xml"
+  },
+  {
+    "name": "GoldenGate",
+    "link": "/click.php?id=1352",
+    "card": "/goldengate-exchanger.html",
+    "real_link": "https://goldengatex.net",
+    "xml": "https://goldengatex.net/valuta.xml"
+  },
+  {
+    "name": "FastEx",
+    "link": "/click.php?id=534",
+    "card": "/fastex-exchanger.html",
+    "real_link": "https://fastex.biz",
+    "xml": "https://fastex.biz/request-exportxml.xml"
+  },
+  {
+    "name": "Fly-Pay",
+    "link": "/click.php?id=1057",
+    "card": "/fly-pay-exchanger.html",
+    "real_link": "https://fly-pay.io"
+  },
+  {
+    "name": "InkognitoSwap",
+    "link": "/click.php?id=1394",
+    "card": "/inkognitoswap-exchanger.html",
+    "real_link": "https://inkognitoswap.com",
+    "xml": "https://inkognitoswap.com/service/export/xml"
+  },
+  {
+    "name": "Swapuz",
+    "link": "/click.php?id=1331",
+    "card": "/swapuz-exchanger.html",
+    "real_link": "https://swapuz.com"
+  },
+  {
+    "name": "MultiKassa",
+    "link": "/click.php?id=1265",
+    "card": "/multikassa-exchanger.html",
+    "real_link": "https://multikassa.com",
+    "xml": "https://multikassa.com/rates/rates.xml"
+  },
+  {
+    "name": "Perfect-Change",
+    "link": "/click.php?id=665",
+    "card": "/perfect-change-exchanger.html",
+    "real_link": "https://perfect-change.com",
+    "xml": "https://perfect-change.com/request-exportxml.xml"
+  },
+  {
+    "name": "ValutaExchange",
+    "link": "/click.php?id=1388",
+    "card": "/valuta-exchanger.html",
+    "real_link": "https://valuta.in.ua",
+    "xml": "https://valuta.in.ua/service/export/xml"
+  },
+  {
+    "name": "Crypik",
+    "link": "/click.php?id=1037",
+    "card": "/crypik-exchanger.html",
+    "real_link": "https://crypik.com",
+    "xml": "https://crypik.com/assets/rates.xml"
+  },
+  {
+    "name": "Vapsy",
+    "link": "/click.php?id=1391",
+    "card": "/vapsy-exchanger.html",
+    "real_link": "https://vapsy.com"
+  },
+  {
+    "name": "R-Obmen",
+    "link": "/click.php?id=818",
+    "card": "/r-obmen-exchanger.html",
+    "real_link": "https://r-obmen.ru",
+    "xml": "https://r-obmen.ru/request-exportxml.xml"
+  },
+  {
+    "name": "MyBTC",
+    "link": "/click.php?id=961",
+    "card": "/mybtc-exchanger.html",
+    "real_link": "https://mybtc.link",
+    "xml": "https://mybtc.link/request-exportxml.xml"
+  },
+  {
+    "name": "LightObmen",
+    "link": "/click.php?id=1204",
+    "card": "/lightobmen-exchanger.html",
+    "real_link": "https://lightobmen.cash",
+    "xml": "https://lightobmen.cash/valuta.xml"
+  },
+  {
+    "name": "SunriseEx",
+    "link": "/click.php?id=1324",
+    "card": "/sunriseex-exchanger.html",
+    "real_link": "https://sunriseex.com"
+  },
+  {
+    "name": "HodlBase",
+    "link": "/click.php?id=1341",
+    "card": "/hodlbase-exchanger.html",
+    "real_link": "https://hodlbase.org"
+  },
+  {
+    "name": "LionChange",
+    "link": "/click.php?id=1351",
+    "card": "/lionchange-exchanger.html",
+    "real_link": "https://lionchange.com",
+    "xml": "https://lionchange.com/service/export/xml"
+  },
+  {
+    "name": "HamsterBit",
+    "link": "/click.php?id=1354",
+    "card": "/hamsterbit-exchanger.html",
+    "real_link": "https://hamsterbit.pro",
+    "xml": "https://hamsterbit.pro/request-exportxml.xml"
+  },
+  {
+    "name": "WhiteXCash",
+    "link": "/click.php?id=1359",
+    "card": "/whitex-exchanger.html",
+    "real_link": "https://whitex.cash",
+    "xml": "https://whitex.cash/request-exportxml.xml"
+  },
+  {
+    "name": "MisterBit",
+    "link": "/click.php?id=1362",
+    "card": "/misterbit-exchanger.html",
+    "real_link": "https://misterbit.pro",
+    "xml": "https://misterbit.pro/request-exportxml.xml"
+  },
+  {
+    "name": "Moscoin",
+    "link": "/click.php?id=1364",
+    "card": "/moscoin-exchanger.html",
+    "real_link": "https://moscoin-exchanger.com"
+  },
+  {
+    "name": "SecuredChange",
+    "link": "/click.php?id=1379",
+    "card": "/securedchange-exchanger.html",
+    "real_link": "https://securedchange.com",
+    "xml": "https://securedchange.com/request-exportxml.xml"
+  },
+  {
+    "name": "CoinsBar",
+    "link": "/click.php?id=1384",
+    "card": "/coinsbar-exchanger.html",
+    "real_link": "https://coinsbar.net",
+    "xml": "https://coinsbar.net/service/export/xml"
+  },
+  {
+    "name": "EasyBit",
+    "link": "/click.php?id=1058",
+    "card": "/easybit-exchanger.html",
+    "real_link": "https://easybit.com"
+  },
+  {
+    "name": "KryptoSwap",
+    "link": "/click.php?id=1248",
+    "card": "/kryptoswap-exchanger.html",
+    "real_link": "https://kryptoswap.exchange"
+  },
+  {
+    "name": "FinchPay",
+    "link": "/click.php?id=1235",
+    "card": "/finchpay-exchanger.html",
+    "real_link": "https://widget.finchpay.io"
+  },
+  {
+    "name": "Efex",
+    "link": "/click.php?id=1192",
+    "card": "/efex-exchanger.html",
+    "real_link": "https://efex.pro"
+  },
+  {
+    "name": "ChangeProject",
+    "link": "/click.php?id=976",
+    "card": "/changeproject-exchanger.html",
+    "real_link": "https://changeproject.best"
+  },
+  {
+    "name": "Elibrax",
+    "link": "/click.php?id=1272",
+    "card": "/elibrax-exchanger.html",
+    "real_link": "https://elibrax.com"
+  },
+  {
+    "name": "OkPays",
+    "link": "/click.php?id=1293",
+    "card": "/okpays-exchanger.html",
+    "real_link": "https://okpays.com"
+  },
+  {
+    "name": "Treddr",
+    "link": "/click.php?id=743",
+    "card": "/treddr-exchanger.html",
+    "real_link": "https://treddr.org",
+    "xml": "https://treddr.org/request-exportxml.xml"
+  },
+  {
+    "name": "UnioChange",
+    "link": "/click.php?id=1023",
+    "card": "/uniochange-exchanger.html",
+    "real_link": "https://uniochange.com"
+  }
+]
