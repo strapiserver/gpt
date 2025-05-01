@@ -35,7 +35,7 @@ export const callGPT = async (
     try {
       const completion = await openai.chat.completions.create({
         model,
-        messages: [{ role: "user", content: prompt }],
+        messages: [{ role: "user", content: prompt.slice(0, 320_000) }],
       });
 
       rawResult = completion?.choices?.[0]?.message?.content;

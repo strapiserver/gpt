@@ -10,7 +10,6 @@ import {
 } from "./helper";
 
 import { mylog, saveProgress } from "../helper";
-import { fillRealLinks } from "../fillReal";
 import { readFileSync } from "fs";
 
 export const findxml = async () => {

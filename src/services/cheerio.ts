@@ -1,36 +1,22 @@
 import axios from "axios";
 import * as cheerio from "cheerio";
 import { mylog } from "../helper";
+import {
+  cleanHtmlForExtraction,
+  hasRepeatedSubstrings,
+  isRatesWastedString,
+  isSimilarText,
+  trimTextValues,
+} from "../descriptions/helper";
 
-export const trimTextValues = (
-  arr: { tag: string; text: string }[]
-): { tag: string; text: string }[] => {
-  return arr.map((item) => ({
-    tag: item.tag,
-    text: item.text.slice(0, 4000),
-  }));
-};
-
-function isSimilarText(
-  existingTexts: string[],
-  newText: string,
-  threshold: number = 0.5
-): boolean {
-  return existingTexts.some((existingText) => {
-    const words1 = new Set(existingText.split(" "));
-    const words2 = new Set(newText.split(" "));
-    const commonWords = [...words1].filter((word) => words2.has(word)).length;
-    const similarity = commonWords / Math.max(words1.size, words2.size);
-    return similarity > threshold;
-  });
-}
 export async function scrape(
   url: string,
   needTrim: boolean = true,
-  id?: string
+  id?: string,
+  html?: string
 ) {
   try {
-    const { data } = await axios.get(url);
+    const { data } = html ? { data: html } : await axios.get(url);
     const $ = cheerio.load(data);
 
     const textBlocks: { tag: string; text: string; href?: string }[] = [];
@@ -69,9 +55,16 @@ export async function scrape(
     traverse(root[0]);
 
     mylog("scraped successfully: " + textBlocks.length, "success");
-    return JSON.stringify(needTrim ? trimTextValues(textBlocks) : textBlocks);
+
+    const filtered = textBlocks.filter(
+      (tb) => !isRatesWastedString(tb.text) || !hasRepeatedSubstrings(tb.text)
+    );
+
+    return cleanHtmlForExtraction(
+      JSON.stringify(needTrim ? trimTextValues(filtered) : filtered)
+    );
   } catch (error) {
-    console.error(`Failed to fetch ${url}:`, error);
+    mylog(`${url}`, "error");
     return "";
   }
 }

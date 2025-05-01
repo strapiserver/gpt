@@ -45,6 +45,13 @@ export const getEnding = (link: string) => {
   return link.split(domain)[1].split("?")[0];
 };
 
+export const getDomain = (link: string) => {
+  return link
+    .replace(/https?:\/\/(www\.)?/i, "")
+    .split("/")[0]
+    .substring(0, 100);
+};
+
 export const cl = (link?: string) => {
   link?.replace(/https?:\/\/(www\.)?/i, "___").split("/")[0];
 };

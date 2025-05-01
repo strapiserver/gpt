@@ -3,11 +3,10 @@ import { IExchangerData, IScrapedBC } from "../types";
 import callStrapi from "../services/callStrapi";
 import { CreateExchangerBC, LinksQuery } from "../services/queries";
 
-import { generateRating } from "../descriptions";
 import { delay, mylog } from "../helper";
-import { cl } from "../xml/helper";
 
 export const createExchangers = async () => {
+  await delay(1500);
   let exist = 0;
   const data = await callStrapi(LinksQuery);
   const exData = data.exchangers.filter(
@@ -25,7 +24,7 @@ export const createExchangers = async () => {
         e.name.toLowerCase() == name.toLowerCase();
       return match;
     });
-    await delay(1500 * index);
+
     if (exists.length) {
       exist += 1;
       mylog(`${bc.length - index} Exists: ${name}`, "hidden");
@@ -42,7 +41,7 @@ export const createExchangers = async () => {
     };
 
     await callStrapi(CreateExchangerBC, data).then(() => {
-      mylog(`${bc.length - index} Created exchanger ${name}`, "hidden");
+      mylog(`${bc.length - index} Created ${name}`, "hidden");
     });
   }
   mylog("FINISHED", "important");

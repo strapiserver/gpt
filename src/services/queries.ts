@@ -115,6 +115,24 @@ export const LinksQuery = gql`
   }
 `;
 
+export const DescriptionQuery = gql`
+  {
+    exchangers(
+      pagination: { limit: 1000 }
+      filters: { exchanger_card: { ru_description: { notNull: false } } }
+    ) {
+      data {
+        id
+        attributes {
+          name
+          rates_link
+          ref_link
+        }
+      }
+    }
+  }
+`;
+
 export const UpdateRefLinks = gql`
   mutation UpdateExchanger($id: ID!, $ref_link: String) {
     updateExchanger(id: $id, data: { ref_link: $ref_link }) {
@@ -148,12 +166,14 @@ export const UpdateDescriptions = gql`
     updateExchanger(
       id: $id
       data: {
-        en_description: $en_description
-        ru_description: $ru_description
-        telegram: $telegram
-        email: $email
-        working_time: $working_time
         admin_rating: $admin_rating
+        exchanger_card: {
+          en_description: $en_description
+          ru_description: $ru_description
+          telegram: $telegram
+          email: $email
+          working_time: $working_time
+        }
       }
     ) {
       data {

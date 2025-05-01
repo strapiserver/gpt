@@ -69,7 +69,7 @@ export const fillArticles = async (sectionName: string) => {
         while (attempts < maxRetries) {
           try {
             const completion = await openai.chat.completions.create({
-              model: "gpt-4o",
+              model: "gpt-4o-mini",
               messages: [{ role: "user", content: prompt }],
             });
 
