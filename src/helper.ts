@@ -1,6 +1,6 @@
 import { writeFileSync } from "fs";
 import callStrapi from "./services/callStrapi";
-import { CreateArticle } from "./services/queries";
+import { CreateArticle, CreateArticleLocalization } from "./services/queries";
 import { IArticleData } from "./types";
 import { IPmGroup, ISection } from "./types/selector";
 
@@ -18,7 +18,7 @@ export const createArticle = async (
   }
   try {
     const { chapters, header, stats, subheader } = articleData;
-    const acticleCreated = (await callStrapi(CreateArticle, {
+    return (await callStrapi(CreateArticle, {
       chapters,
       header,
       stats,
@@ -26,11 +26,37 @@ export const createArticle = async (
       code,
       locale,
     })) as {
-      id: string;
+      createArticle: {
+        id: string;
+      };
     };
-    console.log("acticle created:", code);
   } catch (e) {
     console.log(`📕 \u001b[1;31m Saving article failed!`);
+    console.log(e);
+  }
+};
+
+export const createLocalization = async (
+  baseArticleId: string,
+  locale: string,
+  articleData: IArticleData
+) => {
+  try {
+    const { chapters, header, stats, subheader } = articleData;
+    const res = await callStrapi(CreateArticleLocalization, {
+      id: baseArticleId,
+      locale,
+      data: {
+        chapters,
+        header,
+        stats,
+        subheader,
+      },
+    });
+    await delay(1000);
+    return res;
+  } catch (e) {
+    console.log(`📕 \u001b[1;31m Creating localization failed!`);
     console.log(e);
   }
 };

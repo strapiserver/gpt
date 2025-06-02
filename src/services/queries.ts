@@ -58,6 +58,20 @@ export const CreateArticle = gql`
   }
 `;
 
+export const CreateArticleLocalization = gql`
+  mutation CreateArticleLocalization(
+    $id: ID!
+    $locale: I18NLocaleCode!
+    $data: ArticleInput!
+  ) {
+    createArticleLocalization(id: $id, locale: $locale, data: $data) {
+      data {
+        id
+      }
+    }
+  }
+`;
+
 export const PmGroupsQuery = gql`
   {
     selector {

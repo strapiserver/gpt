@@ -1,5 +1,11 @@
 import { OpenAI } from "openai";
-import { createArticle, getPmNames, mylog, sleep } from "../helper";
+import {
+  createArticle,
+  createLocalization,
+  getPmNames,
+  mylog,
+  sleep,
+} from "../helper";
 import { ISection } from "../types/selector";
 import dotenv from "dotenv";
 import callStrapi from "../services/callStrapi";
@@ -76,7 +82,6 @@ export const fillArticles = async (sectionName: string) => {
       const prompt = `${promptHeader} ${promptDescription} ${promptFooter}`;
       console.log("________________");
       console.log("NAME: ", pmName);
-      console.log("PROMPT: ", prompt);
 
       let rawResult: string | null = null;
       let articleData: IArticleGPT | undefined;
@@ -86,7 +91,8 @@ export const fillArticles = async (sectionName: string) => {
       while (attempts < maxRetries) {
         try {
           const completion = await openai.chat.completions.create({
-            model: "gpt-4o-mini",
+            model: "gpt-4.1",
+            temperature: 0.7,
             messages: [{ role: "user", content: prompt }],
           });
 
@@ -94,7 +100,17 @@ export const fillArticles = async (sectionName: string) => {
 
           if (rawResult) {
             articleData = JSON.parse(rawResult) as IArticleGPT;
-            mylog(`📗 \u001b[1;32m ${pmName} successfully parsed!`, "success");
+
+            if (!articleData.ru.header || !articleData.en.header) {
+              mylog(
+                `❌ \u001b[1;31m ${pmName} is missing ru or en data: ${JSON.stringify(
+                  articleData
+                )}`,
+                "error"
+              );
+              articleData = undefined; // Reset articleData if it's incomplete
+            }
+            mylog(`📗 \u001b[1;32m ${pmName} successfully created!`, "success");
             break; // ✅ Success, exit retry loop
           } else {
             mylog(`${pmName} returned an empty response.`, "error");
@@ -110,18 +126,25 @@ export const fillArticles = async (sectionName: string) => {
 
         attempts++;
         if (attempts < maxRetries) {
-          mylog(`🔄 Retrying in 5 seconds...`);
-          await sleep(5000);
+          mylog(`🔄 Retrying in 1 seconds...`);
+          await sleep(1000);
         }
       }
 
-      if (articleData && articleData.ru && articleData.en) {
-        createArticle(pmName, "ru", articleData.ru);
-        await sleep(2000);
-        createArticle(pmName, "en", articleData.en);
+      if (articleData && articleData.ru.header && articleData.en.header) {
+        const articleEn = await createArticle(pmName, "en", articleData.en); // base article
+        if (articleEn?.createArticle.id) {
+          await sleep(1000);
+          await createLocalization(
+            articleEn.createArticle.id,
+            "ru",
+            articleData.ru
+          );
+        } else {
+          mylog(`❌ Failed to create article for ${pmName} in ru`, "error");
+        }
 
-        mylog(`🔄 Continuing in 5 seconds...`);
-        await sleep(5000);
+        await sleep(1000);
       } else {
         mylog(`❌ ${pmName} failed after ${maxRetries} attempts.`, "error");
       }
