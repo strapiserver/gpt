@@ -33,7 +33,7 @@ export const PromptsQuery = gql`
 `;
 
 export const CreateArticle = gql`
-  mutation CrateArticle(
+  mutation CreateArticle(
     $header: String
     $subheader: String
     $code: String
@@ -101,7 +101,7 @@ export const PmGroupsQuery = gql`
 export const LinksQuery = gql`
   {
     exchangers(
-      pagination: { limit: 1000 } # filters: { ru_description: { notNull: false } }
+      pagination: { limit: 2000 } # filters: { ru_description: { notNull: false } }
     ) {
       data {
         id
@@ -204,6 +204,136 @@ export const CreateExchangerBC = gql`
     ) {
       data {
         id
+      }
+    }
+  }
+`;
+
+const pmGroup = gql`
+    data {
+      id
+      attributes {
+        en_name
+        ru_name
+        countries
+        prefix
+        options {
+          ... on ComponentSelectorSubgroup {
+            id
+            name
+            code
+            currency {
+              data {
+                id
+                attributes {
+                  code
+                  accuracy
+                }
+              }
+            }
+          }
+          ... on ComponentSelectorCurrency {
+            id
+            currency {
+              data {
+                id
+                attributes {
+                  code
+                  accuracy
+                }
+              }
+            }
+          }
+        }
+        color
+
+        icon {
+          data {
+            id
+            attributes {
+              alternativeText
+              url
+            }
+          }
+        }
+      }
+    }
+  
+`;
+
+export const selectorQuery = gql`
+   query Selector {
+    selector {
+      data {
+        id
+        attributes {
+          en_give_header
+          ru_give_header
+          en_get_header
+          ru_get_header
+          search_bar {
+            ru_placeholder
+            en_placeholder
+            ru_give_adornment
+            en_give_adornment
+            ru_get_adornment
+            en_get_adornment
+          }
+          sections {
+            id
+            rows
+            columns
+            ru_title
+            en_title
+            pm_groups(pagination: { start: 0, limit: 1000 } ) {
+              ${pmGroup}
+          }
+        }
+      }
+    }
+  }
+   }
+`;
+
+export const CreateTextBoxMutation = gql`
+  mutation CreateTextBox(
+    $text: String
+    $key: String
+    $subtitle: String
+    $locale: I18NLocaleCode
+  ) {
+    createTextBox(
+      locale: $locale
+      data: { text: $text, key: $key, subtitle: $subtitle }
+    ) {
+      data {
+        id
+      }
+    }
+  }
+`;
+
+export const TextBoxKeysQuery = gql`
+  {
+    textBoxes(pagination: { limit: 50000 }) {
+      data {
+        id
+        attributes {
+          key
+          subtitle
+        }
+      }
+    }
+  }
+`;
+
+export const articleCodesQuery = gql`
+  query Articles($locale: I18NLocaleCode) {
+    articles(locale: $locale, pagination: { start: 0, limit: 1000 }) {
+      data {
+        attributes {
+          code
+        }
       }
     }
   }

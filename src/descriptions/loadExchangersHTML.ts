@@ -126,7 +126,7 @@ async function saveAllTabs() {
   await client.close();
 }
 
-export async function fillDescriptionsManual() {
+export async function loadExchangersHTML() {
   await launchRealChrome();
   const data = await callStrapi(DescriptionQuery);
 

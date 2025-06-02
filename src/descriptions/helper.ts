@@ -1,4 +1,30 @@
 import { JSDOM } from "jsdom";
+import { readdir, readFile } from "fs/promises";
+import { join } from "path";
+import { mylog } from "../helper";
+
+export async function readHtmlFiles() {
+  const folderPath = "./saved";
+  try {
+    const fileData = [] as { fileName: string; content: string }[];
+    const files = await readdir(folderPath);
+
+    const htmlFiles = files.filter((file) => file.endsWith(".html"));
+
+    for (const fileName of htmlFiles) {
+      const filePath = join(folderPath, fileName);
+      const content = await readFile(filePath, "utf-8");
+      fileData.push({
+        fileName,
+        content,
+      });
+    }
+    mylog("Data loaded");
+    return fileData;
+  } catch (err) {
+    console.error("Error reading HTML files:", err);
+  }
+}
 
 export const trimTextValues = (
   arr: { tag: string; text: string }[]
@@ -82,3 +108,6 @@ export function hasRepeatedSubstrings(input: string): boolean {
 
   return false;
 }
+
+export const generateRating = () =>
+  +(Math.random() * (5 - 3.4) + 3.4).toFixed(2);

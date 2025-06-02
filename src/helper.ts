@@ -28,7 +28,7 @@ export const createArticle = async (
     })) as {
       id: string;
     };
-    console.log("acticle created:", acticleCreated);
+    console.log("acticle created:", code);
   } catch (e) {
     console.log(`📕 \u001b[1;31m Saving article failed!`);
     console.log(e);
@@ -60,6 +60,7 @@ export const capitalize = (s: string | undefined) => {
 };
 
 export function delay(ms: number) {
+  mylog(`waiting ${(ms / 1000).toFixed(0)}s ...`);
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
@@ -69,6 +70,7 @@ export function saveProgress(data: any, path: string) {
 
 export const makeRefLink = (link: string) => {
   return link
+    .trim()
     .replace(/https?:\/\/(www\.)?/i, "___")
     .split("/")[0]
     .replace("api.", "")

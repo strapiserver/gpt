@@ -27,12 +27,15 @@ interface ISection {
 }
 
 interface IPmGroup {
+  id: string;
+  countries: string[];
   en_name: string;
   ru_name?: string;
   prefix?: string;
   icon?: IImage;
   color: string;
   options: IOption[];
+  section?: string;
 }
 
 interface IImage {
@@ -44,7 +47,6 @@ interface IImage {
 interface IOption {
   name?: string;
   code?: string;
-  alternative_codes?: string;
   currency: ICurrency;
 }
 
@@ -54,26 +56,28 @@ interface ICurrency {
   accuracy: string;
 }
 
-interface IFiatRates {
+/// дополнительный тип
+export type IPopularAs = "crypto" | "fiat" | "none";
+export interface IPmPointer {
   id: string;
-  usd: number;
-  rub: number;
+  code: string;
+  popular_as?: IPopularAs;
+  pm_group: IPmGroup;
 }
 
-/// дополнительный тип
-
 interface IPm {
+  pm_group_id: string;
   code: string; // USDTERC20
   currency: ICurrency; // USDT
   en_name: string; // Tether ERC-20
   ru_name?: string;
-  subgroup_name?: string; // ERC-20 отобразить в подгруппе
+  subgroup_name?: string | null; // ERC-20 отобразить в подгруппе
   icon?: IImage;
-  fiat?: IFiatRates;
-  popular_as?: string;
+  toUsd?: number;
   possible_pairs?: string[];
-  tag?: string;
   color: string;
+  popular_as?: IPopularAs | null;
+  section?: string;
 }
 
 type ISide = "give" | "get";
@@ -87,6 +91,5 @@ export type {
   IOption,
   IPm,
   IImage,
-  IFiatRates,
   ISide,
 };

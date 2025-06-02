@@ -23,13 +23,11 @@ export const callGPT = async (
   prompt: string,
   id: string,
   model: string = "gpt-4.1-nano"
-) => {
-  if (!prompt) return;
-  let rawResult: string | null = null;
-  let res: any = null;
+): Promise<any | null> => {
+  if (!prompt) return null;
 
-  let attempts = 0;
   const maxRetries = 3;
+  let attempts = 0;
 
   while (attempts < maxRetries) {
     try {
@@ -38,18 +36,18 @@ export const callGPT = async (
         messages: [{ role: "user", content: prompt.slice(0, 320_000) }],
       });
 
-      rawResult = completion?.choices?.[0]?.message?.content;
+      const rawResult = completion?.choices?.[0]?.message?.content;
 
       if (rawResult) {
-        mylog(rawResult);
-        const json = JSON.parse(
-          rawResult.replace(/^```json\s*|```$/g, "").trim()
-        );
-        return json;
+        const cleaned = rawResult.replace(/^```json\s*|```$/g, "").trim();
+        const parsed = JSON.parse(cleaned);
+        return parsed;
       }
     } catch (error) {
       mylog(
-        `⚠️ Error processing ${id} (Attempt ${attempts + 1} of ${maxRetries}):`,
+        `❌ Error processing ${id} (Attempt ${
+          attempts + 1
+        } of ${maxRetries}): ${error}`,
         "error"
       );
     }
@@ -61,13 +59,8 @@ export const callGPT = async (
     }
   }
 
-  if (res) {
-    console.log(res);
-    console.log(`🔄 Continuing in 20 seconds...`);
-    await sleep(20000);
-  } else {
-    console.log(`❌ ${id} failed after ${maxRetries} attempts.`);
-  }
+  mylog(`❌ ${id} failed after ${maxRetries} attempts.`, "error");
+  return null;
 };
 
 export const findPrompt = async (name: string) => {

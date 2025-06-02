@@ -4,7 +4,7 @@ import { mylog } from "../helper";
 import { DescriptionQuery, UpdateDescriptions } from "../services/queries";
 import { callGPT, findPrompt } from "../services/gpt";
 import { scrape } from "../services/cheerio";
-import { generateRating } from "..";
+import { generateRating } from "./helper";
 
 export const fillDescriptionsAuto = async () => {
   try {
@@ -22,9 +22,9 @@ export const fillDescriptionsAuto = async () => {
         const prompt = promptDescription + " " + textBlocks;
         const res = (await callGPT(prompt, e.id)) as any;
 
-        console.log(` ✅ \u001b[1;32m ---------------------------`);
-        console.log(` ✅ \u001b[1;32m Blocks: ${textBlocks.length}`);
-        console.log(` ✅ \u001b[1;32m ___________________________`);
+        mylog(` ✅  ---------------------------`);
+        mylog(`  Blocks: ${textBlocks.length}`, "success");
+        mylog(` ✅  ___________________________`);
 
         if (res) {
           const updateData = {
@@ -37,12 +37,12 @@ export const fillDescriptionsAuto = async () => {
             admin_rating: generateRating(),
           };
           await callStrapi(UpdateDescriptions, updateData);
-          console.log(`📙 \u001b[1;33m ${e.id} filled!`);
+          mylog(`${e.id} filled!`, "warning");
           continue;
         }
       }
     }
   } catch (err) {
-    console.error("❌ Error in fillDescriptions:", err);
+    console.error(" loadExchangersHTML:", err);
   }
 };

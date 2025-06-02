@@ -37,6 +37,7 @@ export const getPossibleEndingsXML = (exchangers: IExchangerData[]) => {
 
 export const getEnding = (link: string) => {
   const domain = link
+    .trim()
     .replace(/https?:\/\/(www\.)?/i, "___")
     .split("/")[0]
     .replace("api.", "")
@@ -47,13 +48,17 @@ export const getEnding = (link: string) => {
 
 export const getDomain = (link: string) => {
   return link
+    .trim()
     .replace(/https?:\/\/(www\.)?/i, "")
     .split("/")[0]
     .substring(0, 100);
 };
 
 export const cl = (link?: string) => {
-  link?.replace(/https?:\/\/(www\.)?/i, "___").split("/")[0];
+  link
+    ?.trim()
+    .replace(/https?:\/\/(www\.)?/i, "___")
+    .split("/")[0];
 };
 
 export function getRepeatedStrings(arr: string[]): string[] {

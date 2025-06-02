@@ -8,10 +8,15 @@ export interface IDB {
   prompts: string[];
 }
 
+export interface IArticleGPT {
+  ru: IArticleData;
+  en: IArticleData;
+}
+
 export interface IArticleData {
   header: string;
   subheader: string;
-  stats: { [key: string]: string };
+  stats: { [key: string]: number };
   chapters: {
     title: string;
     text: string;

@@ -4,65 +4,22 @@ import db from "./db";
 import { findxml } from "./xml";
 import { fillRealLinks } from "./fillReal";
 import { parseBest } from "./parsebest";
-import { fillDescriptionsManual } from "./descriptions/fillDescriptionsManual";
+import { loadExchangersHTML } from "./descriptions/loadExchangersHTML";
 import { fillArticles } from "./articles";
 import { createExchangers } from "./createExchangers";
 import { checkHealthXML } from "./checkHealthXML";
+import { HTML } from "./HTML";
+import { fillDescriptionsAuto } from "./descriptions/fillDescriptionsAuto";
+import fillDescriptionsFromFile from "./descriptions/fillDescriptionsFromFile";
+import { gql } from "graphql-request";
+import callStrapi from "./services/callStrapi";
+import { fillDirs } from "./dirs";
 
 const server = Fastify({ logger: true });
 
 // Serve interactive HTML with buttons
 server.get("/", async (req, reply) => {
-  reply.type("text/html").send(`
-    <!DOCTYPE html>
-    <html>
-      <head>
-        <title>Script Runner</title>
-        <style>
-          body { font-family: sans-serif; padding: 20px; }
-          button, input {
-            font-size: 16px;
-            margin: 5px 0;
-            padding: 8px 16px;
-          }
-        </style>
-      </head>
-      <body>
-        <h2>Run Scripts</h2>
-        <button onclick="run('parsebest')">Parse Best</button>
-        <button onclick="run('fillreal')">Fill Real Links</button>
-        <button onclick="run('findxml')">Find XML</button>
-        <button onclick="run('create')">Create Exchangers</button>
-        <button onclick="run('filldescriptions')">Fill Descriptions</button>
-        <button onclick="run('checkhealthy')">Check Health XML</button>
-
-        <div style="margin-top: 10px;">
-          <input id="sectionInput" placeholder="Enter section name" />
-          <button onclick="runSection()">Fill Articles (section)</button>
-        </div>
-
-        <script>
-          const base = "";
-
-          function run(route) {
-            fetch(\`\${base}/\${route}\`)
-              .then(res => res.text())
-              .then(res => alert("Success: " + res))
-              .catch(err => alert("Error: " + err));
-          }
-
-          function runSection() {
-            const val = document.getElementById("sectionInput").value;
-            if (!val) return alert("Enter section name");
-            fetch(\`/section=\${encodeURIComponent(val)}\`)
-              .then(res => res.text())
-              .then(res => alert("Success: " + res))
-              .catch(err => alert("Error: " + err));
-          }
-        </script>
-      </body>
-    </html>
-  `);
+  reply.type("text/html").send(HTML);
 });
 
 // Script endpoints
@@ -78,28 +35,52 @@ server.get("/fillreal", async (req, reply) => {
 
 server.get("/findxml", async (req, reply) => {
   findxml();
-  reply.send("findxml done");
 });
 
 server.get("/create", async (req, reply) => {
   createExchangers();
-  reply.send("create done");
 });
 
-server.get("/filldescriptions", async (req, reply) => {
-  fillDescriptionsManual();
-  reply.send("filldescriptions done");
+server.get("/filldirs", async (req, reply) => {
+  fillDirs();
+});
+
+server.get("/loadExchangersHTML", async (req, reply) => {
+  loadExchangersHTML();
+});
+
+server.get("/fillDescriptionAuto", async (req, reply) => {
+  fillDescriptionsAuto();
+});
+
+server.get("/fillDescriptionsFromFile", async (req, reply) => {
+  fillDescriptionsFromFile();
 });
 
 server.get("/checkhealthy", async (req, reply) => {
-  checkHealthXML();
-  reply.send("checkhealthy done");
+  //checkHealthXML();
+  const RootTextQuery = gql`
+    query TextBox($locale: I18NLocaleCode, $key: String) {
+      textBoxes(locale: $locale, filters: { key: { eqi: $key } }) {
+        data {
+          id
+          attributes {
+            title
+            subtitle
+            text
+          }
+        }
+      }
+    }
+  `;
+  const res = await callStrapi(RootTextQuery, { locale: "ru", key: "root" });
+
+  console.log("textBoxes", res);
 });
 
 server.get("/section=:sectionName", async (request, reply) => {
   const { sectionName } = request.params as { sectionName: string };
   fillArticles(sectionName);
-  reply.send("section fill done");
 });
 
 // Start the server
