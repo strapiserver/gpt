@@ -95,15 +95,6 @@ export const pmFromPmGroups = (
   );
 };
 
-export const getPmByCode = (pmPointer: IPmPointer): IPm | undefined => {
-  const { code, pm_group, popular_as } = pmPointer;
-  if (!pm_group?.options) return;
-  const pms = extractPmsFromPmGroup(pm_group, popular_as);
-  if (!pms) return;
-  if (!code) return pms[0];
-  return pms.find((pm) => pm.code.toLowerCase() == code.toLowerCase());
-};
-
 export const getPms = (selector: ISelector) => {
   const pmGroups: IPmGroup[] = selector.sections.flatMap((section: ISection) =>
     section.pm_groups.map((pmg) => ({
@@ -137,4 +128,18 @@ export const getSlugs = (dirs: string[], pms: IPm[]) => {
     Object.entries(slugToCodes).map(([slug, dir]) => [dir, slug])
   );
   return inversed;
+};
+
+export const destructureDirSlug = (slug: string) => {
+  const [giveNameCurCode, getNameCurCode] = slug.split("-to-");
+  const [giveName, giveCurCode, giveSubgroupName] = giveNameCurCode.split("-");
+  const [getName, getCurCode, getSubgroupName] = getNameCurCode.split("-");
+  return {
+    giveName,
+    giveCurCode,
+    giveSubgroupName,
+    getName,
+    getCurCode,
+    getSubgroupName,
+  };
 };

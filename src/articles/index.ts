@@ -133,15 +133,47 @@ export const fillArticles = async (sectionName: string) => {
 
       if (articleData && articleData.ru.header && articleData.en.header) {
         const articleEn = await createArticle(pmName, "en", articleData.en); // base article
+        await sleep(3000);
         if (articleEn?.createArticle.id) {
-          await sleep(1000);
-          await createLocalization(
-            articleEn.createArticle.id,
-            "ru",
-            articleData.ru
-          );
+          const maxLocaleRetries = 3;
+          let localeAttempts = 0;
+          let localizationCreated = false;
+
+          while (localeAttempts < maxLocaleRetries && !localizationCreated) {
+            try {
+              await createLocalization(
+                articleEn.createArticle.id,
+                "ru",
+                articleData.ru
+              );
+              localizationCreated = true;
+            } catch (err) {
+              localeAttempts++;
+              mylog(
+                `⚠️ Failed to create 'ru' localization for ${pmName} (Attempt ${localeAttempts}/${maxLocaleRetries}): ${err}`,
+                "error"
+              );
+              if (localeAttempts < maxLocaleRetries) {
+                mylog(`🔄 Retrying localization in 1 second...`);
+                await sleep(1000);
+              }
+            }
+          }
+
+          if (!localizationCreated) {
+            mylog(
+              `❌ Failed to create 'ru' localization for ${pmName} after ${maxLocaleRetries} attempts.`,
+              "error"
+            );
+            // Optional: fallback to creating as a base article instead of localization
+            await createArticle(pmName, "ru", articleData.ru);
+          }
         } else {
-          mylog(`❌ Failed to create article for ${pmName} in ru`, "error");
+          mylog(
+            `❌ Failed to create article for ${pmName} in 'en'. ID: ${articleEn?.createArticle.id}`,
+            "error"
+          );
+          await createArticle(pmName, "ru", articleData.ru);
         }
 
         await sleep(1000);

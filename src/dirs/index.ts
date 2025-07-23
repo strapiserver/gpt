@@ -4,6 +4,7 @@ import { callGPT, findPrompt } from "../services/gpt";
 import { selectorQuery, TextBoxKeysQuery } from "../services/queries";
 import dirTextCreator from "./dirTextCreator";
 import generateSlugs from "./generateSlugs";
+import { destructureDirSlug } from "./pms";
 
 const DIR_TIMEOUT_MS = 30000; // 30 seconds timeout per directory
 
@@ -19,11 +20,23 @@ async function handleDir(
 
   mylog(dir, "hidden");
 
+  const {
+    giveName,
+    giveCurCode,
+    giveSubgroupName,
+    getName,
+    getCurCode,
+    getSubgroupName,
+  } = destructureDirSlug(slug);
+  const promptStart = `${giveName} (${giveCurCode} ${
+    giveSubgroupName || ""
+  }) to ${getName} (${getCurCode} ${getSubgroupName || ""})`;
+
   const promptEnd = await findPrompt(
     `dir_${Math.floor(Math.random() * 5) + 1}`
   );
   await delay(1000);
-  const res = (await callGPT(`${slug} ${promptEnd}`, dir)) as any;
+  const res = (await callGPT(`${promptStart} ${promptEnd}`, dir)) as any;
 
   if (!res) {
     mylog(`No response for ${dir}`, "error");

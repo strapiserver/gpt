@@ -23,7 +23,7 @@ export const createArticle = async (
       header,
       stats,
       subheader,
-      code,
+      code: code.toLowerCase().replaceAll(" ", "_"),
       locale,
     })) as {
       createArticle: {
