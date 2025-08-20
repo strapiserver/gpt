@@ -14,6 +14,7 @@ import fillDescriptionsFromFile from "./descriptions/fillDescriptionsFromFile";
 import { gql } from "graphql-request";
 import callStrapi from "./services/callStrapi";
 import { fillDirs } from "./dirs";
+import { changeExchangerNames } from "./createExchangers/changeNames";
 
 const server = Fastify({ logger: true });
 

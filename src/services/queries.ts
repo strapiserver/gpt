@@ -157,6 +157,16 @@ export const UpdateRefLinks = gql`
   }
 `;
 
+export const UpdateExchangerName = gql`
+  mutation UpdateExchanger($id: ID!, $name: String) {
+    updateExchanger(id: $id, data: { name: $name }) {
+      data {
+        id
+      }
+    }
+  }
+`;
+
 export const DeleteExchanger = gql`
   mutation DeleteExchanger($id: ID!) {
     deleteExchanger(id: $id) {
